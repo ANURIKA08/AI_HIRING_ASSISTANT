@@ -1,0 +1,229 @@
+resume_id,filename,category,skills,num_skills,experience_years,education_score,text_length,raw_score,label
+0,Abiral_Pandey_Fullstack_Java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Git', 'GitHub', 'HTML', 'CSS', 'Node.js', 'Linux', 'SAS']",16,0,4,14194,7.2,0
+1,Achyuth Resume_8.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Google Cloud', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'Linux', 'BERT', 'Redis']",19,0,4,19316,8.4,1
+2,Adelina_Erimia_PMP1.docx,Project Manager,"['R', 'Excel']",2,0,3,6102,1.4000000000000001,0
+3,Adhi Gopalam - SM.docx,Other,"['Java', 'R', 'Excel']",3,12,4,14200,6.0,0
+4,AjayKumar.docx,Other,"['SQL', 'Java', 'R', 'C++', 'Excel', 'Git', 'GitHub', 'Statistics', 'Regression', 'Selenium']",10,0,4,33376,4.8,0
+5,Akhil.profile.docx,Other,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'Azure', 'HTML', 'CSS', 'Hadoop', 'Regression', 'Classification', 'Selenium']",12,0,4,19020,5.6000000000000005,0
+6,Akhil_Sr BSA.docx,Business Systems Analyst,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'Azure', 'HTML', 'CSS', 'Hadoop', 'Regression', 'Classification', 'Selenium']",12,0,4,18231,5.6000000000000005,0
+7,Alekhya Resume.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Selenium']",17,8,4,24329,10.8,1
+8,Amar Sr BSA.docx,Business Systems Analyst,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'AWS', 'Git', 'HTML', 'CSS', 'Data Visualization', 'Regression', 'SAS']",12,0,4,26091,5.6000000000000005,0
+9,Ami Jape.docx,Other,"['SQL', 'R', 'Excel', 'Git']",4,10,4,23127,6.3999999999999995,0
+10,Amrinder Business Analyst.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'HTML', 'Regression']",6,10,3,14826,7.0,0
+11,Amulya Komatineni.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'HTML', 'CSS', 'React', 'Linux', 'BERT', 'Regression', 'Clustering', 'Selenium', 'SAS', 'Redis', 'Kafka']",22,8,4,26740,12.8,1
+12,Anil Krishna Mogalaturthi.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'AWS', 'Azure', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Statistics', 'Selenium']",20,8,4,26852,12.0,1
+13,AnilAgarwal.docx,Other,"['SQL', 'R', 'Excel', 'HTML', 'CSS']",5,0,3,35139,2.6,0
+14,Anudeep N_Sr Java Developer.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MySQL', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Data Visualization', 'Clustering', 'SAS']",16,0,4,12381,7.2,0
+15,Ashok Jayakumar - PM.docx,Project Manager,"['SQL', 'Java', 'R', 'Excel', 'HTML', 'Linux', 'SAS']",7,0,3,12693,3.4000000000000004,0
+16,Ashwini J2EE Developer.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'PostgreSQL', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'Selenium', 'Kafka', 'Elasticsearch']",19,8,4,19729,11.600000000000001,1
+17,Atul_Mathur_Resume.docx,Other,"['Java', 'R', 'Probability']",3,0,4,8697,2.0,0
+18,Avathika BA-Healthcare_.docx,Business Analyst,"['SQL', 'Java', 'R', 'C++', 'Excel', 'HTML', 'Linux', 'Regression']",8,0,3,11409,3.8000000000000003,0
+19,avinash G.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Clustering', 'Selenium', 'SAS', 'Redis']",21,8,4,25158,12.400000000000002,1
+20,B Shaker-Sr BSA-Scrum Master .docx,Project Manager,"['SQL', 'R', 'Excel', 'HTML', 'CSS', 'Node.js']",6,9,4,16480,6.8,0
+21,B Suresh Kumar_Project Manager_1.docx,Project Manager,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MySQL', 'AWS', 'Azure', 'Git', 'GitHub', 'HTML', 'CSS', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Kafka']",19,0,4,11905,8.4,1
+22,BA - Abhishek.docx,Business Analyst,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'AWS', 'HTML', 'Statistics', 'Regression', 'Classification', 'SAS']",11,11,3,20230,9.0,1
+23,BA - Navneet.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'HTML']",6,0,3,20159,3.0000000000000004,0
+24,BA Kiran.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Git', 'Regression']",5,0,4,13689,2.8,0
+25,BA with INV.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'MySQL', 'HTML', 'Regression']",7,8,3,13487,6.6,0
+26,Balaji Gopalakrishnan Project Manager.docx,Business Analyst,"['SQL', 'Java', 'R', 'MongoDB', 'MySQL', 'Hadoop', 'Hive', 'OCR', 'Snowflake', 'Kafka']",10,15,3,14260,8.6,1
+27,Balakrishna Sudabathula.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'Linux', 'Kafka']",11,0,4,9740,5.2,0
+28,Bapuji Hadoop developer.docx,Business Analyst,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'MySQL', 'AWS', 'Git', 'GitHub', 'HTML', 'CSS', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Airflow', 'Kafka']",19,8,4,15038,11.600000000000001,1
+29,Bharat Arora_CV_PMP _ ERP1.docx,Project Manager,"['SQL', 'R', 'Tableau', 'Excel']",4,8,3,11567,5.4,0
+30,Bharatha BA Resume.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Regression']",4,7,3,10990,5.0,0
+31,Brahma-Resume (BA).docx,Business Analyst,"['Python', 'SQL', 'Java', 'R', 'Power BI', 'Tableau', 'Excel', 'AWS', 'HTML', 'Hive', 'Regression', 'SAS', 'Qlik']",13,8,3,16159,9.0,1
+32,Business Analyst_GHyma.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'HTML', 'Regression']",6,0,3,17118,3.0000000000000004,0
+33,Chandler_BA.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'MySQL', 'HTML', 'CSS', 'Linux', 'BERT', 'EDA']",10,0,4,11221,4.8,0
+34,chenna kesava.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'Selenium', 'SAS', 'Kafka']",22,8,4,24194,12.8,1
+35,CHETAN_Sr Java Developer.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'Node.js', 'Linux']",13,0,4,13929,6.0,0
+36,Dantu Padmasri - Project Manager.docx,Project Manager,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Bash', 'Regression']",7,0,3,9064,3.4000000000000004,0
+37,Dave.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MySQL', 'PostgreSQL', 'Azure', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hadoop', 'Clustering', 'Selenium', 'SAS']",21,9,4,27148,12.8,1
+38,Deepika Chintalapati.docx,Other,"['SQL', 'R', 'AWS', 'Linux', 'Statistics']",5,0,3,17955,2.6,0
+39,Deepika DC.docx,Other,"['SQL', 'R', 'Excel', 'Statistics']",4,0,3,16080,2.2,0
+40,Derik.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MySQL', 'PostgreSQL', 'Azure', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hadoop', 'Clustering', 'Selenium', 'SAS']",21,9,4,27148,12.8,1
+41,Dhanalaxmi -BA.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'SAS']",5,0,3,12331,2.6,0
+42,Drakshajavauidev.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Linux', 'Spark']",15,0,4,19901,6.8,0
+43,employer_mounika details.docx,Other,[],0,0,0,0,0.0,0
+44,Francis Gomes Resume.docx,Other,['R'],1,0,3,7953,1.0,0
+45,Gautami Bulusu Mobile Testing 3.docx,Other,"['SQL', 'Java', 'R', 'C++', 'Excel', 'Linux', 'Regression', 'Selenium']",8,4,3,9754,5.4,0
+46,Gokul Selvam S PM.docx,Project Manager,"['SQL', 'R', 'Excel', 'EDA', 'SAS']",5,14,3,12228,6.6,0
+47,Gopi.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Data Visualization']",19,0,4,23048,8.4,1
+48,Gururaja Murthy PMCPCSM.docx,Project Manager,"['R', 'Excel', 'Statistics', 'Regression']",4,18,3,15538,6.199999999999999,0
+49,Haarika_BA.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'HTML', 'Statistics', 'Regression', 'Selenium']",9,8,4,20567,7.6000000000000005,0
+50,Harika_java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Regression', 'Selenium', 'Redis', 'Kafka', 'Elasticsearch']",23,0,4,21498,10.000000000000002,1
+51,Harish K.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Selenium', 'Kafka']",19,0,4,25912,8.4,1
+52,harish S.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Regression', 'Selenium']",21,8,4,17218,12.400000000000002,1
+53,HARI_Sr.Java Developer.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'Linux', 'Regression', 'Selenium', 'Kafka']",18,0,4,13527,8.0,1
+54,Harshitha Challa.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Linux']",14,8,4,17819,9.600000000000001,1
+55,indrakaran soma.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'AWS', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'Node.js', 'Linux', 'Hive']",14,8,4,18653,9.600000000000001,1
+56,jagadeesh k.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'HTML', 'CSS', 'Linux', 'Redis']",17,0,4,16606,7.6000000000000005,0
+57,Jagan S Iyer PM.docx,Project Manager,"['SQL', 'R', 'Excel', 'HTML', 'CSS', 'Hadoop']",6,0,3,7221,3.0000000000000004,0
+58,Jaya prakash.docx,Other,"['Python', 'SQL', 'Java', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'HTML', 'Spark', 'Redis', 'Kafka', 'Elasticsearch']",16,10,4,22492,11.200000000000001,1
+59,Jayadattaperi N.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'Hadoop', 'Selenium', 'SAS', 'Kafka']",19,0,4,18083,8.4,1
+60,jeck P.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'REST API', 'Django', 'HTML', 'CSS', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'OCR', 'Selenium', 'Kafka']",22,0,4,22548,9.600000000000001,1
+61,Jennifer  M. Conte.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'REST API', 'HTML', 'CSS', 'Linux', 'Redis']",14,0,4,6670,6.4,0
+62,Jimi_Desai_PM.docx,Project Manager,"['SQL', 'R', 'Excel', 'SAS']",4,0,4,13582,2.4000000000000004,0
+63,kalyan das.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Selenium', 'SAS', 'Kafka']",26,0,4,23419,11.200000000000001,1
+64,Kashyap K. Vora resume.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Machine Learning', 'Tableau', 'Excel', 'AWS', 'Azure', 'Git', 'HTML', 'CSS', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Statistics', 'Data Cleaning', 'EDA', 'Neural Networks', 'MATLAB', 'SAS', 'Qlik', 'Snowflake']",26,10,4,31110,15.200000000000001,1
+65,KIRAN KUMAR.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'Node.js', 'Linux', 'Selenium']",14,0,4,23938,6.4,0
+66,komal patel.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MySQL', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'EDA', 'Selenium']",16,0,4,21554,7.2,0
+67,Komala BSA Resume.docx,Business Systems Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'Azure', 'Git', 'GitHub', 'HTML', 'CSS', 'Statistics', 'Data Visualization', 'Regression', 'SAS']",15,8,4,33289,10.0,1
+68,Krishna Kuruvella.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'Git', 'HTML', 'CSS', 'Node.js', 'Linux', 'Hive']",12,0,4,18956,5.6000000000000005,0
+69,Krishna Sr. BSA Resume.docx,Business Systems Analyst,"['SQL', 'Java', 'R', 'Excel', 'MySQL', 'PostgreSQL', 'AWS', 'Git', 'HTML', 'CSS', 'Regression', 'Selenium', 'SAS']",13,0,4,19686,6.0,0
+70,Krishnapriya_BA.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'HTML', 'CSS']",8,0,4,15107,4.0,0
+71,Krishna_BSA.docx,Business Systems Analyst,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'MySQL', 'PostgreSQL', 'AWS', 'Git', 'Regression', 'Selenium', 'SAS']",12,0,4,21321,5.6000000000000005,0
+72,Krishna_SrJava.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'PostgreSQL', 'Git', 'REST API', 'HTML', 'CSS', 'Linux']",12,8,4,23759,8.8,1
+73,Kumar Raj.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'Django', 'HTML', 'CSS', 'Linux', 'Bash', 'Hadoop', 'Hive', 'Clustering', 'Selenium', 'Kafka', 'Elasticsearch']",23,9,4,17843,13.600000000000001,1
+74,Kuppurajbabu_BA.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'HTML', 'Regression']",7,10,3,15252,7.4,0
+75,KY BA PM UPDATED RESUME .docx,Business Analyst,"['SQL', 'R', 'Tableau', 'Excel']",4,0,4,13356,2.4000000000000004,0
+76,Madhuri Pawar.docx,Other,"['SQL', 'R', 'Excel', 'HTML']",4,7,3,15279,5.0,0
+77,madhuri R.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Linux', 'SAS', 'Kafka', 'Elasticsearch']",18,0,4,23166,8.0,1
+78,madhuri_java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux']",12,0,4,19140,5.6000000000000005,0
+79,Madhu_BA_AW.DOCX,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'Docker', 'Git', 'HTML', 'Linux', 'Regression', 'Selenium']",10,9,3,11496,8.2,1
+80,mahesh_Java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'BERT', 'Regression', 'Selenium', 'SAS']",18,8,4,23764,11.200000000000001,1
+81,Mahesh_Kamath_PM (1).docx,Project Manager,"['SQL', 'Java', 'R', 'C++', 'Excel', 'Linux', 'Regression', 'Redis']",8,17,4,14360,8.0,1
+82,Manikanta P.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'Hive', 'Statistics', 'Selenium', 'Kafka']",19,0,4,18539,8.4,1
+83,manish_singh_resume.docx,Other,"['SQL', 'Java', 'R', 'C++', 'Tableau', 'Excel', 'Git', 'HTML', 'CSS', 'Linux', 'Hive', 'Statistics', 'Data Visualization', 'Regression', 'Classification', 'SAS', 'SPSS', 'Snowflake']",18,12,4,51681,12.0,1
+84,Mani_Hadoop.docx,Hadoop Developer,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Data Visualization', 'Kafka']",19,0,4,13725,8.4,1
+85,Manohar B.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'Node.js', 'Linux']",12,7,4,15561,8.400000000000002,1
+86,Manohar Reddy.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Machine Learning', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'Django', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'BERT', 'Regression', 'Selenium', 'SAS', 'Redis', 'Kafka']",31,4,4,36457,14.8,1
+87,manohar.B.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Google Cloud', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Selenium', 'Kafka']",23,8,4,32199,13.200000000000003,1
+88,Mehul.docx,Other,"['SQL', 'R', 'Excel', 'MySQL', 'Git', 'BERT', 'Data Cleaning', 'Regression', 'Selenium']",9,0,3,17429,4.2,0
+89,Mitali Barman_Resume.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Statistics', 'Regression']",5,0,3,12842,2.6,0
+90,Mohamad Jamil.docx,Other,['R'],1,0,4,5126,1.2000000000000002,0
+91,Mohammad Resume.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Power BI', 'Tableau', 'Excel', 'AWS', 'REST API', 'HTML', 'CSS', 'Hadoop', 'SAS', 'SPSS']",14,0,4,16083,6.4,0
+92,mohid_rj.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MySQL', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'Linux', 'Regression']",13,0,4,15373,6.0,0
+93,mounika BA resume 7.docx,Business Analyst,"['SQL', 'R', 'Excel', 'HTML', 'CSS']",5,7,3,20060,5.4,0
+94,Mounika health care resume.docx,Other,"['SQL', 'R', 'Excel']",3,7,3,16923,4.6,0
+95,MounikaReddy.docx,Other,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'MySQL', 'AWS', 'HTML']",8,8,3,16318,7.0,0
+96,Mounika_P.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Tableau', 'MongoDB', 'MySQL', 'AWS', 'Git', 'GitHub', 'Django', 'HTML', 'CSS', 'React', 'Node.js', 'Spark', 'Hive', 'SAS']",20,0,3,12716,8.6,1
+97,Murali_Project Manager QA.DOCX,Project Manager,"['SQL', 'Java', 'R', 'C++', 'Excel', 'MySQL', 'Git', 'HTML', 'Linux', 'Regression']",10,4,4,16795,6.3999999999999995,0
+98,Nandini_Resume.docx,Other,"['SQL', 'Java', 'R', 'Excel', 'Regression']",5,0,3,19202,2.6,0
+99,Naren Sr.BA .docx,Business Analyst,"['SQL', 'Java', 'R', 'Power BI', 'Tableau', 'Excel', 'MySQL', 'Git', 'HTML', 'CSS', 'Linux', 'Data Visualization', 'Regression']",13,9,4,21916,9.600000000000001,1
+100,Naren Sr.BA.docx,Business Analyst,"['SQL', 'Java', 'R', 'Power BI', 'Tableau', 'Excel', 'MySQL', 'Git', 'HTML', 'CSS', 'Linux', 'Data Visualization', 'Regression']",13,9,4,21927,9.600000000000001,1
+101,Naresh V.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hive']",16,7,4,18715,10.000000000000002,1
+102,Naveen Arora.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MySQL', 'HTML', 'CSS', 'Linux', 'Regression', 'Selenium']",11,0,4,15897,5.2,0
+103,Naveen Kumar Bandela.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hadoop', 'Regression', 'Selenium']",17,8,4,21819,10.8,1
+104,Naveen.S_Resume.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'Node.js', 'Linux']",14,0,4,23389,6.4,0
+105,Navneeth Resume.docx,Other,"['SQL', 'Java', 'R', 'Excel', 'MySQL', 'AWS', 'Git', 'Linux', 'Hadoop', 'Regression', 'SAS']",11,0,3,19023,5.0,0
+106,Neha Mugghala.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'Linux', 'Transformers', 'Regression', 'MATLAB', 'Kafka', 'Elasticsearch']",20,8,4,20042,12.0,1
+107,Nikhil.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'AWS', 'Azure', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'Node.js', 'Linux', 'Bash', 'Hive', 'Selenium', 'SAS', 'Kafka', 'Elasticsearch']",24,8,4,24405,13.600000000000001,1
+108,Nikith Reddy.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'Node.js', 'Linux', 'Spark', 'BERT', 'Selenium', 'Kafka']",19,0,4,25596,8.4,1
+109,Nikki_Nimmagadd.docx,Other,"['SQL', 'Java', 'R', 'C++', 'Excel', 'HTML']",6,0,3,11531,3.0000000000000004,0
+110,Nilesh-resume_1_phplead.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'HTML', 'CSS']",7,11,3,3252,7.4,0
+111,Niteesh Java Developer.docx,Java Developer,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'Selenium']",19,8,4,21082,11.600000000000001,1
+112,nithin katapally.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'SAS']",17,8,4,34642,10.8,1
+113,nithin Reddy.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Selenium', 'SAS', 'Kafka']",23,8,4,37950,13.200000000000003,1
+114,Othman - Project Manager.docx,Project Manager,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'HTML', 'BERT']",7,10,3,9161,7.4,0
+115,Pankaj BSA.docx,Business Systems Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Tableau', 'Excel', 'MySQL', 'Git', 'HTML', 'CSS', 'Statistics', 'Regression', 'Alteryx']",14,8,4,21630,9.600000000000001,1
+116,ParthMPatel_BA.docx,Business Analyst,"['SQL', 'R', 'Tableau', 'Excel', 'HTML']",5,7,3,9317,5.4,0
+117,Pavan Kumar Full Stack Java Developer.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'REST API', 'Flask', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'Selenium', 'SAS', 'Kafka']",22,0,4,30394,9.600000000000001,1
+118,Pavan Sr Business Analyst resume.docx,Business Analyst,"['SQL', 'R', 'Excel']",3,8,3,17529,5.0,0
+119,Pierre John.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Azure', 'REST API', 'Flask', 'Django', 'HTML', 'CSS', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Data Visualization', 'Regression', 'Selenium', 'SAS', 'Redis', 'Kafka', 'Elasticsearch']",28,0,4,31767,12.000000000000002,1
+120,PM RESUME.docx,Project Manager,"['Java', 'R', 'Excel', 'AWS', 'Azure', 'SAS']",6,0,3,14763,3.0000000000000004,0
+121,Pranay P.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Selenium', 'Kafka', 'Elasticsearch']",18,0,4,22070,8.0,1
+122,Prashant Chawda_resume.docx,Other,"['Java', 'JavaScript', 'R', 'Excel', 'HTML']",5,0,3,9363,2.6,0
+123,Praveen B.docx,Other,"['SQL', 'R', 'Excel', 'AWS', 'Linux', 'Hive', 'SAS']",7,0,4,14970,3.6000000000000005,0
+124,Praveen T.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'Selenium', 'Kafka']",19,0,4,17603,8.4,1
+125,Priya B.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'Kafka']",17,9,4,5966,11.200000000000001,1
+126,Priyanka Sr BSA Resume.docx,Business Systems Analyst,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'MySQL', 'AWS', 'Linux', 'Regression']",9,8,4,26990,7.6000000000000005,0
+127,Priya_Sharma.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'HTML', 'CSS', 'Regression']",11,0,4,13222,5.2,0
+128,Raja Santhosam_PM Scrum Master.DOCX,Project Manager,"['SQL', 'R', 'Tableau', 'SAS']",4,0,3,14910,2.2,0
+129,Rajendra-PMP-CSM.docx,Project Manager,"['SQL', 'Java', 'R', 'Excel', 'Git', 'GitHub', 'Statistics', 'Selenium']",8,15,4,10219,8.0,1
+130,Rajesh_k.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'PostgreSQL', 'SQLite', 'AWS', 'Google Cloud', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'Linux']",15,0,3,4537,6.6,0
+131,Raju Goduguchinta_Technical Program Manager.docx,Other,[],0,0,0,0,0.0,0
+132,ram krishna.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'Node.js', 'Linux', 'Kafka']",18,0,4,17469,8.0,1
+133,ram nandyala.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Selenium', 'SAS', 'Kafka']",18,8,4,21806,11.200000000000001,1
+134,Ramachandra EDA.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Statistics', 'Kafka']",18,8,4,24446,11.200000000000001,1
+135,Ramteja Motupalli.docx,Other,"['SQL', 'R', 'Tableau', 'Regression', 'SAS']",5,8,3,19965,5.800000000000001,0
+136,RAMYA BUSINESS ANALYST RESUME.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Tableau', 'Excel', 'HTML', 'CSS', 'Linux', 'Regression']",11,0,4,8667,5.2,0
+137,Randy Adams.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'Azure', 'Git', 'Django', 'HTML', 'CSS', 'Node.js', 'Linux', 'Selenium', 'SAS']",17,8,4,24503,10.8,1
+138,Ranjan_Project Manager-Scrum Master.docx,Project Manager,"['SQL', 'Java', 'R', 'Excel', 'HTML']",5,14,4,9251,6.8,0
+139,Rao_Java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Selenium', 'Redis', 'Kafka']",19,0,4,27394,8.4,1
+140,Rashmitha R.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'EDA', 'Kafka']",16,3,4,17892,8.4,1
+141,Ravi Pattar- Sr. Agile Program manager.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'AWS', 'Git', 'GitHub', 'HTML', 'CSS', 'Linux', 'SAS']",14,0,4,12939,6.4,0
+142,Ravi Reddy.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'AWS', 'Git', 'Django', 'HTML', 'CSS', 'Node.js', 'Linux', 'Selenium', 'Elasticsearch']",16,0,4,15889,7.2,0
+143,RaviBurra_Certified PM_DevOps.docx,Project Manager,"['Python', 'SQL', 'Java', 'R', 'Excel', 'AWS', 'Azure', 'Docker', 'Git', 'CSS', 'Hadoop', 'Hive', 'Regression', 'Selenium', 'SAS', 'Kafka']",16,10,4,23629,11.200000000000001,1
+144,ravikiran JALASUTRAPU.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'REST API', 'HTML', 'CSS', 'Node.js', 'Linux', 'Kafka']",17,9,4,26274,11.200000000000001,1
+145,RaviRaju_Resume.docx,Other,"['SQL', 'Java', 'R', 'Power BI', 'Tableau', 'Excel', 'PostgreSQL', 'AWS', 'Git', 'HTML', 'Linux', 'Data Visualization']",12,0,4,14608,5.6000000000000005,0
+146,Reddemma_Lankipalle.docx,Other,"['SQL', 'Java', 'R', 'Excel', 'Git', 'HTML', 'CSS', 'Linux', 'Regression', 'Selenium']",10,8,4,18036,8.0,1
+147,Resume - Kishore Kotapati - 218E - BA.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Git', 'GitHub', 'HTML', 'CSS', 'Hive']",8,0,4,17535,4.0,0
+148,Resume - PM Agile-Scrum.docx,Project Manager,"['Java', 'R', 'SAS']",3,19,4,12919,6.0,0
+149,Resume - Sr PM.docx,Project Manager,"['Java', 'R', 'SAS']",3,19,4,13784,6.0,0
+150,"Resume Vishal PM - MSIS, PMP-PMI.docx",Project Manager,[],0,0,0,0,0.0,0
+151,Resume2018March.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'HTML', 'CSS', 'BERT']",8,0,3,10431,3.8000000000000003,0
+152,Resume_Spoorti Pandit_BSA.docx,Business Systems Analyst,"['SQL', 'R', 'Excel', 'Git', 'Regression', 'Classification']",6,5,4,21130,5.2,0
+153,Robinson.docx,Other,"['SQL', 'Java', 'R', 'Excel', 'Git', 'Regression']",6,10,4,15861,7.2,0
+154,Rohanu Resume.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'Linux', 'Kafka']",14,8,4,23184,9.600000000000001,1
+155,ronith s.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MongoDB', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux']",14,9,4,21855,10.000000000000002,1
+156,Sahas BA Resume.docx,Business Analyst,"['SQL', 'R', 'C++', 'Tableau', 'Excel', 'Git', 'Node.js', 'Linux', 'Data Visualization', 'Regression', 'Qlik']",11,0,4,25629,5.2,0
+157,Sahithi K.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'AWS', 'Docker', 'Git', 'REST API', 'HTML', 'CSS', 'Linux', 'Statistics', 'BERT', 'Regression']",15,0,4,17561,6.8,0
+158,sai k.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'HTML', 'CSS', 'Node.js']",9,0,4,26110,4.4,0
+159,Sai Krishna BA.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Regression']",4,0,3,11692,2.2,0
+160,Sai kumar.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'MySQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hadoop', 'EDA', 'Regression', 'Selenium', 'SAS']",18,7,4,14125,10.8,1
+161,Sai Srinivas_Sr_Java_Developer.docx,Java Developer,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'Django', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Data Visualization', 'Selenium', 'Kafka']",25,9,4,21915,14.4,1
+162,sairithvik alla.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Git', 'REST API', 'Flask', 'Django', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'SAS']",20,0,4,25489,8.8,1
+163,Saiteja G.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Google Cloud', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hadoop', 'Selenium', 'Redis', 'Kafka']",23,8,4,23715,13.200000000000003,1
+164,Samir Naik-NJ - Feb 2018-V6.0.docx,Other,"['SQL', 'R', 'C++', 'Tableau', 'Excel', 'Git']",6,0,4,14153,3.2,0
+165,Samir Naik-NJ - Mar 2018-V3.0.docx,Other,"['SQL', 'R', 'C++', 'Tableau', 'Excel', 'Git']",6,0,4,14339,3.2,0
+166,sanjay kumar.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Selenium']",15,0,4,18806,6.8,0
+167,Santosh Arugula BA.docx,Business Analyst,"['SQL', 'R', 'Excel']",3,0,3,16184,1.8000000000000003,0
+168,Sarath M.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Selenium', 'SAS', 'Kafka']",18,7,4,23346,10.8,1
+169,SaravanaKumar.docx,Other,"['SQL', 'Java', 'R', 'AWS', 'Git', 'SAS']",6,0,3,7235,3.0000000000000004,0
+170,Satish Reddy.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Machine Learning', 'Excel', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Bash', 'Spark', 'Hadoop', 'Hive', 'Regression', 'Kafka']",24,9,4,22751,14.000000000000002,1
+171,Satish Uduta.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'PostgreSQL', 'AWS', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'BERT', 'Regression', 'Selenium', 'SAS']",17,8,4,19191,10.8,1
+172,SAURABH_PM.docx,Project Manager,[],0,0,0,2,0.0,0
+173,Shail_Tank-Business Analyst .docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'HTML']",7,4,4,17112,5.2,0
+174,Shaker Resume.docx,Other,"['SQL', 'Java', 'R', 'Tableau', 'Excel', 'HTML', 'CSS', 'Node.js']",8,9,4,16000,7.6000000000000005,0
+175,Sharath Java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Selenium', 'SAS', 'Kafka']",23,7,4,13587,12.800000000000002,1
+176,Shashank.docx,Other,"['SQL', 'R', 'Excel', 'Statistics', 'Regression', 'SAS']",6,4,4,12638,4.8,0
+177,Shelly Woods.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'REST API', 'HTML', 'CSS', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Data Cleaning', 'Kafka']",15,0,4,17167,6.8,0
+178,Shiuli Mahmud.docx,Other,"['SQL', 'R', 'Excel', 'React', 'BERT']",5,10,5,25717,7.0,0
+179,Shiva G-Java Resume.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'SAS']",13,8,4,17348,9.200000000000001,1
+180,Siddhartha Gandroju.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Hadoop', 'Hive', 'BERT', 'Clustering', 'Selenium', 'SAS', 'Kafka']",28,9,4,31252,15.600000000000001,1
+181,Smita Kamble_Resume.docx,Other,"['SQL', 'R', 'Tableau', 'Excel', 'Git', 'Qlik']",6,0,4,12101,3.2,0
+182,Sougandh_Java Fullstack Developer.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Spark', 'Selenium', 'Kafka']",18,0,4,23176,8.0,1
+183,Spoorthi Finance BSA Resume.docx,Business Systems Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'MySQL', 'HTML', 'CSS', 'Regression']",10,8,3,20046,7.800000000000001,0
+184,Sr. Business Analyst.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'Regression', 'Excel VBA', 'SAS']",7,0,3,14604,3.4000000000000004,0
+185,Sravani Battu.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'Git', 'HTML', 'CSS', 'Spark', 'Hadoop', 'Hive', 'Kafka']",13,6,4,8248,8.4,1
+186,Sravani Singirikonda.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'REST API', 'Django', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'BERT', 'Selenium', 'SAS', 'Kafka']",22,8,4,21115,12.8,1
+187,Sri Gati.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'Flask', 'HTML', 'CSS', 'Node.js', 'Linux', 'Spark', 'Hive', 'Clustering', 'Selenium', 'Elasticsearch']",21,8,4,28167,12.400000000000002,1
+188,srinivas b.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Hive', 'Selenium', 'SAS', 'Kafka']",20,8,4,20430,12.0,1
+189,Srivatsan_Project_Manager.docx,Other,"['SQL', 'R', 'Excel', 'AWS', 'Git']",5,16,4,36934,6.8,0
+190,Sudhakar Reddy.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'Bash', 'Hadoop', 'Hive', 'Redis', 'Kafka']",17,0,4,24292,7.6000000000000005,0
+191,Sumanth Manne Java Developer.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'Django', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'SAS', 'Kafka']",21,0,4,28009,9.200000000000001,1
+192,Sundar_Java_8+ Years..docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Bash', 'Regression', 'Selenium', 'SAS', 'Kafka']",23,0,4,31878,10.000000000000002,1
+193,SUNITHA Project Manager (1).docx,Project Manager,"['SQL', 'Java', 'JavaScript', 'R', 'Power BI', 'Tableau', 'Excel', 'MySQL', 'Hive', 'Data Visualization']",10,15,4,26432,8.8,1
+194,Syed_Zia_Ashraf.docx,Other,"['Python', 'SQL', 'Java', 'R', 'C++', 'Tableau', 'Excel', 'AWS', 'Azure', 'Git', 'REST API', 'Spark', 'Hadoop', 'Hive', 'Regression', 'Qlik']",16,0,3,23808,7.0,0
+195,Tanmay_Dam_Resume_BA.docx,Business Analyst,"['SQL', 'R', 'Excel']",3,10,4,11876,6.0,0
+196,Tarun RESUME-BSAT.docx,Business Systems Analyst,"['SQL', 'R', 'Power BI', 'Tableau', 'Excel', 'REST API', 'HTML', 'Spark', 'Hadoop', 'Hive', 'A/B Testing', 'Regression', 'Snowflake', 'Kafka']",14,0,4,20762,6.4,0
+197,Tarun Resume.docx,Other,"['SQL', 'Java', 'R', 'Tableau', 'AWS', 'HTML', 'CSS', 'Hadoop', 'Data Visualization', 'Selenium', 'SAS', 'Qlik']",12,0,3,12494,5.4,0
+198,Tarun.docx,Other,"['Python', 'SQL', 'Java', 'R', 'AWS', 'Git', 'HTML', 'CSS', 'Linux', 'Hadoop', 'Hive']",11,0,4,4822,5.2,0
+199,Tarun_Developer.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Bash', 'EDA', 'Selenium', 'Kafka']",21,0,4,27858,9.200000000000001,1
+200,Tejaswi-resume.docx,Other,"['SQL', 'Java', 'R', 'Excel', 'Statistics']",5,7,3,10193,5.4,0
+201,TeresaNeetipudi IT BA.DOCX,Business Analyst,"['SQL', 'R', 'Excel', 'Statistics', 'Regression']",5,8,3,12191,5.800000000000001,0
+202,Tushar Patel.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'HTML', 'Node.js', 'EDA']",9,0,4,2815,4.4,0
+203,Uday_Maripelly.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'Git', 'GitHub', 'HTML', 'CSS', 'Linux', 'Regression', 'Selenium']",13,0,3,16915,5.800000000000001,0
+204,Ujvala BA Feb 20.docx,Business Analyst,"['SQL', 'Java', 'R', 'Excel', 'HTML', 'Linux', 'Statistics', 'Regression']",8,0,4,17421,4.0,0
+205,Utthan Silawal12.docx,Other,"['SQL', 'R', 'Excel', 'Git']",4,0,3,18102,2.2,0
+206,V Ashok A.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'HTML', 'CSS', 'Selenium']",9,0,4,15998,4.4,0
+207,Vamshi L.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'AWS', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Hive', 'Selenium', 'SAS', 'Kafka']",19,8,4,24100,11.600000000000001,1
+208,Vamshi Teja_Business Analyst.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Regression']",4,7,3,10474,5.0,0
+209,Varun Kumar.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'HTML', 'CSS', 'React', 'Linux', 'Selenium', 'Kafka', 'Elasticsearch']",16,0,4,21370,7.2,0
+210,Varun.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'EDA', 'OCR', 'Selenium', 'SAS', 'Kafka']",23,8,4,20307,13.200000000000003,1
+211,vema reddy.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Machine Learning', 'Tableau', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Spark', 'Hadoop', 'Hive', 'Regression', 'Clustering', 'Selenium', 'Kafka']",28,0,4,32399,12.000000000000002,1
+212,Venkata_Sr.PHP_Developer.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MySQL', 'Git', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'SAS']",15,9,4,10066,10.4,1
+213,Venkat_BA.docx,Business Analyst,"['SQL', 'R', 'Excel', 'Regression']",4,9,3,18290,5.800000000000001,0
+214,venu b.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Linux', 'Selenium']",14,0,4,21844,6.4,0
+215,Vijay Bhargav.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Machine Learning', 'Tableau', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'HTML', 'CSS', 'Node.js', 'Spark', 'Hadoop', 'Hive', 'Selenium', 'SAS', 'Kafka']",22,9,4,20599,13.200000000000001,1
+216,VIJETHA G.docx,Other,"['Python', 'SQL', 'Java', 'JavaScript', 'R', 'C++', 'Excel', 'MySQL', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'Selenium', 'SAS', 'Kafka']",23,0,4,22776,10.000000000000002,1
+217,vikas java.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'REST API', 'HTML', 'CSS', 'React', 'Node.js', 'Linux', 'Regression', 'Selenium', 'SAS', 'Redis', 'Kafka']",23,0,4,33252,10.000000000000002,1
+218,Vikash_BA_Ab.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'HTML', 'CSS', 'Regression', 'SAS']",10,0,4,20550,4.8,0
+219,Vinay.D_Resume.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'MongoDB', 'MySQL', 'AWS', 'Azure', 'Docker', 'Git', 'GitHub', 'HTML', 'CSS', 'React', 'Linux', 'Kafka']",16,0,4,22430,7.2,0
+220,Vishal S..docx,Other,"['SQL', 'R', 'SAS']",3,0,4,11804,2.0,0
+221,Vishnu BA Resume.docx,Business Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'HTML', 'CSS']",8,10,3,16407,7.800000000000001,0
+222,Vishnu J.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'HTML', 'CSS', 'EDA', 'Selenium', 'Kafka']",11,0,4,16885,5.2,0
+223,Vishnu Java dev.docx,Java Developer,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'Git', 'HTML', 'CSS', 'EDA', 'Selenium', 'Kafka']",11,0,4,16885,5.2,0
+224,Vivek Joshi_CV.docx,Other,"['SQL', 'R', 'Excel', 'Git', 'CSS']",5,12,4,8434,6.8,0
+225,Vivek.BSA.docx,Business Systems Analyst,"['SQL', 'Java', 'JavaScript', 'R', 'Tableau', 'Excel', 'AWS', 'REST API', 'HTML', 'CSS', 'Regression']",11,0,4,22738,5.2,0
+226,Yohan BSA.docx,Business Systems Analyst,"['SQL', 'R', 'Power BI', 'Tableau', 'Excel', 'MySQL', 'REST API', 'HTML', 'Spark', 'Hadoop', 'Hive', 'Regression', 'Selenium', 'SAS', 'Qlik', 'Snowflake', 'Kafka']",17,0,4,23453,7.6000000000000005,0
+227,Yugesh_Resume.docx,Other,"['SQL', 'Java', 'JavaScript', 'R', 'Excel', 'MongoDB', 'MySQL', 'AWS', 'Docker', 'Git', 'REST API', 'HTML', 'CSS', 'Linux', 'Transformers', 'Selenium', 'Redis']",17,8,4,22089,10.8,1

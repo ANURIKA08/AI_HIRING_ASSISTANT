@@ -1,0 +1,91 @@
+Python
+SQL
+Java
+JavaScript
+R
+C++
+Machine Learning
+Deep Learning
+Natural Language Processing
+Computer Vision
+TensorFlow
+PyTorch
+Keras
+Scikit-learn
+XGBoost
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Plotly
+Power BI
+Tableau
+Excel
+MongoDB
+MySQL
+PostgreSQL
+SQLite
+Firebase
+AWS
+Azure
+Google Cloud
+Docker
+Kubernetes
+Git
+GitHub
+REST API
+FastAPI
+Flask
+Django
+Streamlit
+HTML
+CSS
+React
+Node.js
+Linux
+Bash
+Spark
+Hadoop
+Hive
+Airflow
+Statistics
+Probability
+Linear Algebra
+Data Visualization
+Feature Engineering
+Model Deployment
+MLOps
+OpenCV
+BERT
+Transformers
+Hugging Face
+LangChain
+Prompt Engineering
+Data Cleaning
+EDA
+A/B Testing
+Time Series Analysis
+Regression
+Classification
+Clustering
+Reinforcement Learning
+Neural Networks
+Transfer Learning
+Word2Vec
+Sentence Transformers
+OCR
+Web Scraping
+Selenium
+Beautiful Soup
+Excel VBA
+MATLAB
+SAS
+SPSS
+Alteryx
+Looker
+Qlik
+Snowflake
+Databricks
+Redis
+Kafka
+Elasticsearch

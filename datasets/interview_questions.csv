@@ -1,0 +1,6 @@
+id,role,question,difficulty
+1,Data Scientist,Explain supervised vs unsupervised learning.,Medium
+2,ML Engineer,What is gradient descent?,Hard
+3,Data Analyst,How do you handle missing data?,Easy
+4,Python Developer,What are Python decorators?,Medium
+5,General,Tell me about yourself.,Easy

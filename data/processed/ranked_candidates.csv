@@ -1,0 +1,4 @@
+candidate_id,name,skill_score,experience_years,education,certification_score,job_match_score,final_score,rank,status
+CAND-001,Alice,85,3,B.Tech,2,90,67.0,1,Under Review
+CAND-002,Bob,60,1,M.Tech,1,70,51.5,2,Under Review
+CAND-003,Charlie,45,5,12th,0,50,42.0,3,Rejected
