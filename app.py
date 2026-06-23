@@ -445,7 +445,11 @@ else:
                 cat_skills = hr_df.groupby('category')['num_skills'].mean().reset_index()
                 cat_skills.columns = ['Department/Role', 'Avg Skills']
                 fig_quality = px.bar(cat_skills, x='Department/Role', y='Avg Skills', title="💡 Average Skill Density by Role Type", color_discrete_sequence=['#8A2BE2'])
-                fig_quality.update_layout(bargap=0.2, xaxis=dict(tickangle=-30), **PLOTLY_DARK_LAYOUT_CONFIG)
+                
+                # FIXED: Separated update commands to prevent Python **kwarg clashes
+                fig_quality.update_layout(bargap=0.2, **PLOTLY_DARK_LAYOUT_CONFIG)
+                fig_quality.update_xaxes(tickangle=-30)
+                
                 st.plotly_chart(fig_quality, use_container_width=True)
                 st.markdown("</div>", unsafe_allow_html=True)
                 
@@ -596,7 +600,11 @@ else:
                 color_discrete_sequence=CHART_THEME_COLOR_MAP,
                 title=f"Linguistic & Behavioral Assessment: {inspected_candidate}"
             )
-            fig_emo.update_layout(showlegend=False, xaxis=dict(range=[0,105]), **PLOTLY_DARK_LAYOUT_CONFIG)
+            
+            # FIXED: Separated update commands to prevent Python **kwarg clashes
+            fig_emo.update_layout(showlegend=False, **PLOTLY_DARK_LAYOUT_CONFIG)
+            fig_emo.update_xaxes(range=[0,105])
+            
             st.plotly_chart(fig_emo, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
 
@@ -694,7 +702,11 @@ Corporate Talent Management Desk Office
             results_df = pd.DataFrame(metrics_data).T.reset_index().rename(columns={'index': 'Model'})
             results_melted = results_df.melt(id_vars='Model', var_name='Metric', value_name='Score')
             fig_model = px.bar(results_melted, x='Model', y='Score', color='Metric', barmode='group', color_discrete_sequence=CHART_THEME_COLOR_MAP)
-            fig_model.update_layout(bargap=0.18, bargroupgap=0.04, yaxis=dict(range=[0, 1.05]), **PLOTLY_DARK_LAYOUT_CONFIG)
+            
+            # FIXED: Separated update commands to prevent Python **kwarg clashes
+            fig_model.update_layout(bargap=0.18, bargroupgap=0.04, **PLOTLY_DARK_LAYOUT_CONFIG)
+            fig_model.update_yaxes(range=[0, 1.05])
+            
             st.plotly_chart(fig_model, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Optimization metrics log buffers clear.")
