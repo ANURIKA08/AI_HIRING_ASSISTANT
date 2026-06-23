@@ -86,19 +86,18 @@ if st.session_state['portal_view'] == "Home":
     btn_col1, btn_col2 = st.columns(2)
     with btn_col1:
         st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-        if st.button("👤 ACCESS CANDIDATE PORTAL\n(Apply, Register & Take AI Video Assessment)", use_container_width=True, type="primary"):
+        if st.button("👤 ACCESS CANDIDATE PORTAL", use_container_width=True, type="primary"):
             st.session_state['portal_view'] = "Candidate"
             st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
         
     with btn_col2:
         st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-        if st.button("💼 ACCESS HR & DATA SCIENCE COCKPIT\n(Review Dashboard, Audit ML Models & Track Data)", use_container_width=True):
+        if st.button("💼 ACCESS HR PORTAL", use_container_width=True):
             st.session_state['portal_view'] = "HR"
             st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
 
-    # FIXED: Handled raw HTML spacing parameter configurations safely
     st.markdown("<br><br><br><br>", unsafe_allow_html=True)
     st.markdown("---")
     st.caption("<center>System Platform Build v3.8.2 • Secure Memory Ledger Active</center>", unsafe_allow_html=True)
@@ -378,70 +377,91 @@ else:
 
     # Live Resume Screening & OCR Module Code
     elif choice == "🔮 Live Resume Screening & OCR":
+        from docx import Document
+        from src.skill_extraction.extractor import extract_skills
+        from src.resume_processing.resume_parser import extract_experience, extract_education, extract_education_score
+
         model_path = 'models/ranking_model/candidate_ranker.pkl'
+        clf_model = None
+        has_model = False
+
         if os.path.exists(model_path):
-            from docx import Document
-            from src.skill_extraction.extractor import extract_skills
-            from src.resume_processing.resume_parser import extract_experience, extract_education, extract_education_score
+            try:
+                clf_model = joblib.load(model_path)
+                has_model = True
+            except Exception:
+                has_model = False
+        
+        if has_model:
+            st.caption("🟢 Core ML Architecture: Serialized `.pkl` Predictive Engine Online")
+        else:
+            st.caption("🔵 Core ML Architecture: Streamlined Deterministic Fallback Engine Active")
 
-            clf_model = joblib.load(model_path)
+        uploaded_file = st.file_uploader("📥 Upload Candidate Resume (.docx, .pdf, .txt, .png, .jpg)", type=["docx", "txt", "pdf", "png", "jpg", "jpeg"])
+        extracted_text = ""
+        
+        if uploaded_file is not None:
+            file_extension = uploaded_file.name.split('.')[-1].lower()
             
-            uploaded_file = st.file_uploader("📥 Upload Candidate Resume (.docx, .pdf, .txt, .png, .jpg)", type=["docx", "txt", "pdf", "png", "jpg", "jpeg"])
-            extracted_text = ""
+            if file_extension in ["png", "jpg", "jpeg"]:
+                try:
+                    img = Image.open(uploaded_file)
+                    st.image(img, caption="Uploaded Image Document Target Base", width=350)
+                    with st.spinner("⏳ Initializing Tesseract OCR Engine Neural Mappings..."):
+                        time.sleep(1.5)
+                    st.success("🎯 Vision Matrix Extraction Complete via High-Resolution OCR Layer!")
+                    extracted_text = "Summary: Professional Data Scientist with 6 years experience specializing in predictive modeling, deep learning architectures, and big data orchestration workflows.\nTechnical Skills: Python, SQL, AWS, PyTorch, Scikit-Learn, Random Forest, XGBoost.\nEducation: B.Tech in Computer Science - Tier 1 University Ranking."
+                except Exception as e: st.error(f"OCR Fault: {e}")
             
-            if uploaded_file is not None:
-                file_extension = uploaded_file.name.split('.')[-1].lower()
-                
-                if file_extension in ["png", "jpg", "jpeg"]:
-                    try:
-                        img = Image.open(uploaded_file)
-                        st.image(img, caption="Uploaded Image Document Target Base", width=350)
-                        with st.spinner("⏳ Initializing Tesseract OCR Engine Neural Mappings..."):
-                            time.sleep(1.5)
-                        st.success("🎯 Vision Matrix Extraction Complete via High-Resolution OCR Layer!")
-                        extracted_text = "Summary: Professional Data Scientist with 6 years experience specializing in predictive modeling, deep learning architectures, and big data orchestration workflows.\nTechnical Skills: Python, SQL, AWS, PyTorch, Scikit-Learn, Random Forest, XGBoost.\nEducation: B.Tech in Computer Science - Tier 1 University Ranking."
-                    except Exception as e: st.error(f"OCR Fault: {e}")
-                
-                elif file_extension == "docx":
-                    try:
-                        doc = Document(uploaded_file)
-                        extracted_text = "\n".join([para.text for para in doc.paragraphs])
-                        st.success(f"📁 DOCX read clean: {uploaded_file.name}")
-                    except Exception as e: st.error(f"Error: {e}")
-                elif file_extension == "txt":
-                    try:
-                        extracted_text = uploaded_file.read().decode("utf-8")
-                        st.success(f"📁 TXT read clean: {uploaded_file.name}")
-                    except Exception as e: st.error(f"Error: {e}")
-                elif file_extension == "pdf":
-                    try:
-                        import pypdf
-                        reader = pypdf.PdfReader(uploaded_file)
-                        extracted_text = "\n".join([page.extract_text() for page in reader.pages if page.extract_text()])
-                        st.success(f"📁 PDF read clean: {uploaded_file.name}")
-                    except Exception as e: st.error(f"Error: {e}")
-            
-            raw_resume_text = st.text_area("📄 Profile Workspace OCR Text Extraction Buffer:", value=extracted_text, height=200)
-            if st.button("⚡ Run Core Predictive Classifier", type="primary"):
-                if not raw_resume_text.strip(): st.warning("⚠️ Action blocked: Text field buffer empty.")
-                else:
-                    live_skills = extract_skills(raw_resume_text)
-                    live_exp = extract_experience(raw_resume_text)
-                    live_edu = extract_education(raw_resume_text)
-                    live_edu_score = extract_education_score(live_edu)
-                    live_length = len(raw_resume_text)
+            elif file_extension == "docx":
+                try:
+                    doc = Document(uploaded_file)
+                    extracted_text = "\n".join([para.text for para in doc.paragraphs])
+                    st.success(f"📁 DOCX read clean: {uploaded_file.name}")
+                except Exception as e: st.error(f"Error: {e}")
+            elif file_extension == "txt":
+                try:
+                    extracted_text = uploaded_file.read().decode("utf-8")
+                    st.success(f"📁 TXT read clean: {uploaded_file.name}")
+                except Exception as e: st.error(f"Error: {e}")
+            elif file_extension == "pdf":
+                try:
+                    import pypdf
+                    reader = pypdf.PdfReader(uploaded_file)
+                    extracted_text = "\n".join([page.extract_text() for page in reader.pages if page.extract_text()])
+                    st.success(f"📁 PDF read clean: {uploaded_file.name}")
+                except Exception as e: st.error(f"Error: {e}")
+        
+        raw_resume_text = st.text_area("📄 Profile Workspace OCR Text Extraction Buffer:", value=extracted_text, height=200)
+        
+        if st.button("⚡ Run Core Predictive Classifier", type="primary"):
+            if not raw_resume_text.strip(): 
+                st.warning("⚠️ Action blocked: Text field buffer empty.")
+            else:
+                live_skills = extract_skills(raw_resume_text)
+                live_exp = extract_experience(raw_resume_text)
+                live_edu = extract_education(raw_resume_text)
+                live_edu_score = extract_education_score(live_edu)
+                live_length = len(raw_resume_text)
 
-                    i1, i2, i3 = st.columns(3)
-                    i1.metric("Skills Located", f"{len(live_skills)}")
-                    i2.metric("Tenure Parsed", f"{live_exp} Yrs")
-                    i3.metric("Education Weight", f"{live_edu_score} / 5")
-                    
+                i1, i2, i3 = st.columns(3)
+                i1.metric("Skills Located", f"{len(live_skills)}")
+                i2.metric("Tenure Parsed", f"{live_exp} Yrs")
+                i3.metric("Education Weight", f"{live_edu_score} / 5")
+                
+                if has_model and clf_model is not None:
                     input_vector = np.array([[len(live_skills), live_exp, live_edu_score, live_length]])
                     prediction = clf_model.predict(input_vector)[0]
-                    if prediction == 1: st.success("🔥 RECOMMENDATION STATUS: AUTOMATED SHORTLIST CRITERIA MET")
-                    else: st.info("⏳ RECOMMENDATION STATUS: STANDBY ARCHIVE POOL")
-        else:
-            st.warning("⚠️ Predictive analytics binaries offline. Serialized `.pkl` engines not located on disk.")
+                else:
+                    if len(live_skills) >= 3 or live_exp >= 3 or live_edu_score >= 3:
+                        prediction = 1
+                    else:
+                        prediction = 0
+                        
+                if prediction == 1: 
+                    st.success("🔥 RECOMMENDATION STATUS: AUTOMATED SHORTLIST CRITERIA MET")
+                else: 
+                    st.info("⏳ RECOMMENDATION STATUS: STANDBY ARCHIVE POOL")
 
     # Recruiter-Side Video Emotion Verification Matrix Panel
     elif choice == "📸 Video Emotion Analytics":
@@ -604,9 +624,7 @@ Corporate Talent Management Desk Office
             st.plotly_chart(fig_profile, use_container_width=True)
         else: st.info("ℹ️ Unsupervised baseline profiles offline.")
 
-    # ====================================================================
-    # NEW ADVANCED INTEGRATION: SPACY & LLM SANDBOX MODULE CODE
-    # ====================================================================
+    # SpaCy & LLM Sandbox Module Code
     elif choice == "🧬 SpaCy & LLM Refinement":
         st.subheader("🧬 SpaCy Linguistic Processor & Generative LLM Diagnostics")
         st.markdown("Review the raw tokenization structures handled by **SpaCy** and review executive feedback logs synthesized by our generative **LLM** model layers.")
