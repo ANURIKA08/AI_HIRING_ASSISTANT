@@ -1,33 +1,18 @@
-import spacy
 import re
 
 # ====================================================================
-# SMART FALLBACK: AUTOMATIC CLOUD MODEL DOWNLOADER
-# ====================================================================
-# This prevents the app from crashing on Streamlit Cloud by automatically 
-# fetching the English grammar dictionary if it isn't already installed.
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    from spacy.cli import download
-    download("en_core_web_sm")
-    nlp = spacy.load("en_core_web_sm")
-
-
-# ====================================================================
-# EXTRACTION FUNCTIONS
+# LIGHTWEIGHT EXTRACTION FUNCTIONS (No heavy ML models needed here!)
 # ====================================================================
 
 def extract_experience(text):
     """
     Scans the resume text using Regular Expressions (Regex) to find 
-    mentions of years of experience (e.g., '5 years of experience', '3+ yrs').
+    mentions of years of experience (e.g., '5 years of experience').
     """
     pattern = r'(\d+)\s*(?:years?|yrs?)(?:\s+of)?\s+experience'
     matches = re.findall(pattern, text, re.IGNORECASE)
     
     if matches:
-        # If multiple mentions are found, return the highest number
         return max([int(m) for m in matches])
     return 0
 
@@ -51,8 +36,7 @@ def extract_education(text):
 
 def extract_education_score(education_list):
     """
-    Assigns a mathematical weight to the highest level of education 
-    found so the Machine Learning model can rank the candidate.
+    Assigns a mathematical weight to the highest level of education.
     """
     score = 0
     for edu in education_list:
@@ -64,7 +48,6 @@ def extract_education_score(education_list):
         elif any(bachelor in edu_lower for bachelor in ['bachelor', 'b.tech', 'b.sc', 'b.e']):
             score = max(score, 3)
             
-    # If no recognized degree is found but text exists, assign a baseline score
     if score == 0 and len(education_list) > 0:
         score = 1
         
