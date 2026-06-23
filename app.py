@@ -12,10 +12,93 @@ import time
 st.set_page_config(page_title="MyRecruiter — Enterprise AI OS", layout="wide")
 
 # ====================================================================
+# PREMIUM GLASSMORPHISM DARK MODE UI INJECTION (CSS STYLE SHEET)
+# ====================================================================
+st.markdown("""
+<style>
+    /* Global Background and Typography Overrides */
+    .stApp {
+        background: radial-gradient(circle at 90% 10%, #1c122c 0%, #0d0914 60%, #050408 100%) !important;
+        color: #f3f0f7 !important;
+        font-family: 'Inter', system-ui, sans-serif !important;
+    }
+    
+    /* Premium Glassmorphic Card Containers */
+    .glass-card {
+        background: rgba(25, 18, 38, 0.45) !important;
+        border: 1px solid rgba(232, 96, 28, 0.15) !important;
+        border-radius: 16px !important;
+        padding: 24px !important;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .glass-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(138, 43, 226, 0.4);
+    }
+    
+    /* Neon Text Gradient Accents */
+    .gradient-text {
+        background: linear-gradient(135deg, #E8601C 0%, #A832E2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+    }
+    
+    /* Button Customization Overrides */
+    div.stButton > button {
+        background: linear-gradient(135deg, #1f1430 0%, #0f0a18 100%) !important;
+        color: #f3f0f7 !important;
+        border: 1px solid rgba(232, 96, 28, 0.3) !important;
+        border-radius: 12px !important;
+        padding: 12px 24px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.5px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+    }
+    div.stButton > button:hover {
+        border-color: #E8601C !important;
+        background: linear-gradient(135deg, #E8601C 0%, #8A2BE2 100%) !important;
+        color: #ffffff !important;
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(232, 96, 28, 0.4) !important;
+    }
+    
+    /* Sidebar Layout Styling */
+    section[data-testid="stSidebar"] {
+        background-color: #09060d !important;
+        border-right: 1px solid rgba(255,255,255,0.04) !important;
+    }
+    
+    /* Input Fields Styling */
+    .stTextInput>div>div>input, .stSelectbox>div>div>div {
+        background-color: #120b1a !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
+        border-radius: 10px !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Central Graphic Theme Constant Maps for Plotly Layouts
+CHART_THEME_COLOR_MAP = ['#E8601C', '#8A2BE2', '#C70039', '#FFC300', '#2ECC71']
+PLOTLY_DARK_LAYOUT_CONFIG = dict(
+    plot_bgcolor='rgba(0,0,0,0)',
+    paper_bgcolor='rgba(0,0,0,0)',
+    font=dict(color='#f3f0f7', family='Inter'),
+    xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.05)', title_font=dict(color='#a59cb0'), tickfont=dict(color='#a59cb0')),
+    yaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.05)', title_font=dict(color='#a59cb0'), tickfont=dict(color='#a59cb0'))
+)
+
+# ====================================================================
 # SESSION STATE INITIALIZATION & ROUTING LIFECYCLES
 # ====================================================================
 if 'portal_view' not in st.session_state:
-    st.session_state['portal_view'] = "Home"  # Options: "Home", "Candidate", "HR"
+    st.session_state['portal_view'] = "Home"
 
 if 'reg_candidates' not in st.session_state:
     st.session_state['reg_candidates'] = [
@@ -51,37 +134,36 @@ if 'emotion_logs' not in st.session_state:
 # FEATURE WORKFLOW 1: MAIN ATTRACTIVE PORTAL LANDING PAGE
 # --------------------------------------------------------------------
 if st.session_state['portal_view'] == "Home":
-    st.markdown("<p style='color: #E8601C; font-weight: bold; font-size: 14px; letter-spacing: 2px; margin-bottom: 0px;'>ENTERPRISE PROTOCOL</p>", unsafe_allow_html=True)
-    st.title("🎯 MyRecruiter Advanced AI Operating System")
-    st.caption("Next-Generation Multi-Modal Talent Sourcing, Automated Verification & Predictive Analytics Architecture")
-    st.markdown("---")
+    st.markdown("<p style='color: #E8601C; font-weight: bold; font-size: 13px; letter-spacing: 3px; margin-bottom: 0px;'>ENTERPRISE MANAGEMENT SUITE</p>", unsafe_allow_html=True)
+    st.markdown("<h1 style='font-size: 42px; margin-top: 5px; margin-bottom: 5px;'>MyRecruiter <span class='gradient-text'>Advanced AI OS</span></h1>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #a59cb0; font-size: 16px; margin-bottom: 30px;'>Next-Generation Multi-Modal Talent Sourcing, Automated Verification & Predictive Analytics Architecture</p>", unsafe_allow_html=True)
     
     hcol1, hcol2, hcol3 = st.columns(3)
     with hcol1:
         st.markdown("""
-        <div style='background-color: rgba(232, 96, 28, 0.08); padding: 25px; border-radius: 12px; border-left: 5px solid #E8601C; min-height: 220px;'>
-            <h4 style='color: #E8601C; margin-top:0px;'>🧬 Computer Vision & OCR</h4>
-            <p style='font-size: 14px; opacity: 0.85;'>Extract hidden candidate properties out of physical photo files or structured PDF logs instantly using multi-channel neural mapping frameworks.</p>
+        <div class='glass-card'>
+            <h3 style='color: #E8601C; margin-top:0px; font-size: 20px;'>📸 Computer Vision OCR</h3>
+            <p style='font-size: 14px; color: #d0c8da; line-height: 1.6;'>Extract hidden candidate features out of physical photo records or documents instantly using multi-channel neural mapping layers.</p>
         </div>
         """, unsafe_allow_html=True)
         
     with hcol2:
         st.markdown("""
-        <div style='background-color: rgba(47, 128, 237, 0.08); padding: 25px; border-radius: 12px; border-left: 5px solid #2F80ED; min-height: 220px;'>
-            <h4 style='color: #2F80ED; margin-top:0px;'>🎙️ Multi-Turn AI Screening</h4>
-            <p style='font-size: 14px; opacity: 0.85;'>Run structured role-specific chat queues or on-camera video assessments that capture candidate linguistic responses and composure scores.</p>
+        <div class='glass-card' style='border-left: 2px solid #8A2BE2 !important;'>
+            <h3 style='color: #8A2BE2; margin-top:0px; font-size: 20px;'>🎙️ Interactive Video</h3>
+            <p style='font-size: 14px; color: #d0c8da; line-height: 1.6;'>Run interactive role-specific chat queues or on-camera video responses that capture candidate linguistic parameters and composure text logs.</p>
         </div>
         """, unsafe_allow_html=True)
         
     with hcol3:
         st.markdown("""
-        <div style='background-color: rgba(39, 174, 96, 0.08); padding: 25px; border-radius: 12px; border-left: 5px solid #27AE60; min-height: 220px;'>
-            <h4 style='color: #27AE60; margin-top:0px;'>🧠 Predictive Classifiers</h4>
-            <p style='font-size: 14px; opacity: 0.85;'>Evaluate talent pool trends side-by-side using pre-compiled Random Forest architectures, K-Means profiles, and TF-IDF plagiarism checkers.</p>
+        <div class='glass-card'>
+            <h3 style='color: #2ECC71; margin-top:0px; font-size: 20px;'>🧠 Predictive Analytics</h3>
+            <p style='font-size: 14px; color: #d0c8da; line-height: 1.6;'>Evaluate talent pool trends side-by-side using pre-compiled Random Forest models, K-Means profiles, and TF-IDF similarity blocks.</p>
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("<br><br><h3 style='text-align: center; margin-bottom: 20px;'>Select Your System Entry Environment</h3>", unsafe_allow_html=True)
+    st.markdown("<br><h3 style='text-align: center; font-weight: 600; margin-bottom: 25px; color: #f3f0f7;'>Select System Workspace Access Terminal</h3>", unsafe_allow_html=True)
     
     btn_col1, btn_col2 = st.columns(2)
     with btn_col1:
@@ -98,36 +180,36 @@ if st.session_state['portal_view'] == "Home":
             st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
 
-    st.markdown("<br><br><br><br>", unsafe_allow_html=True)
-    st.markdown("---")
-    st.caption("<center>System Platform Build v3.8.2 • Secure Memory Ledger Active</center>", unsafe_allow_html=True)
+    st.markdown("<br><br><br><br><hr style='border-color: rgba(255,255,255,0.05);'>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #62596d; font-size: 12px;'>Platform Core Engine v4.0.0 • Active Server Cluster Token Authenticated</p>", unsafe_allow_html=True)
 
 # --------------------------------------------------------------------
 # FEATURE WORKFLOW 2: THE SECURE CANDIDATE PORTAL WORKSPACE
 # --------------------------------------------------------------------
 elif st.session_state['portal_view'] == "Candidate":
-    if st.sidebar.button("⬅️ Exit to Main Welcome Page", use_container_width=True):
+    if st.sidebar.button("⬅️ Exit to Home Workspace", use_container_width=True):
         st.session_state['portal_view'] = "Home"
         st.rerun()
         
     st.sidebar.markdown("---")
-    st.sidebar.info(f"🟢 **Portal Mode:**\nCandidate Space\n\n**Session:**\n{st.session_state['active_candidate_session'] if st.session_state['active_candidate_session'] else 'Unauthenticated'}")
+    st.sidebar.markdown(f"**Portal State:** `Candidate Terminal`  \n**Session Token:** `{st.session_state['active_candidate_session'] if st.session_state['active_candidate_session'] else 'None'}`")
     
     if st.session_state['candidate_step'] == "Registration":
-        st.title("📝 Candidate Registration Portal")
-        st.markdown("Please construct your core applicant profile footprint to register and unlock your automated AI assessment slots.")
+        st.markdown("<h2 style='margin-bottom:0px;'>Candidate Onboarding Setup</h2>", unsafe_allow_html=True)
+        st.markdown("<p style='color: #a59cb0; margin-bottom: 25px;'>Please declare your core identity parameters to initialize your screening modules.</p>", unsafe_allow_html=True)
         
+        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         with st.form("candidate_registration_form", clear_on_submit=True):
-            c_name = st.text_input("Full Name:", placeholder="Jane Doe")
+            c_name = st.text_input("Full Candidate Name:", placeholder="Jane Doe")
             c_email = st.text_input("Email Address:", placeholder="jane@example.com")
-            c_role = st.selectbox("Desired Functional Target Role:", 
+            c_role = st.selectbox("Target Core Functional Discipline:", 
                                   ["Machine Learning Engineer", "Data Scientist", "Business Analyst", "Project Manager", "Java Developer"])
             
-            submit_reg = st.form_submit_button("🚀 Submit Profile & Unlock AI Assessments", type="primary")
+            submit_reg = st.form_submit_button("🚀 Initialize Assessment Framework")
             
             if submit_reg:
                 if not c_name.strip() or not c_email.strip():
-                    st.warning("⚠️ Access Denied: Mandatory initialization parameters missing.")
+                    st.warning("⚠️ Access Denied: Mandatory parameters cannot remain blank.")
                 else:
                     st.session_state['reg_candidates'].append({"Name": c_name, "Email": c_email, "Role": c_role, "Status": "Registered"})
                     st.session_state['active_candidate_session'] = c_name
@@ -136,31 +218,36 @@ elif st.session_state['portal_view'] == "Candidate":
                     st.session_state['voice_history'] = []
                     st.session_state['chat_index'] = 0
                     st.session_state['chat_history'] = []
-                    st.success(f"🎉 Welcome {c_name}! Your profile is active.")
+                    st.success(f"🎉 Session registered successfully for {c_name}!")
                     st.rerun()
+        st.markdown("</div>", unsafe_allow_html=True)
 
     elif st.session_state['candidate_step'] == "Select Assessment":
-        st.title("🎯 Choose Your Screening Interface")
-        st.markdown(f"Welcome back, **{st.session_state['active_candidate_session']}**. Please execute one of our multi-modal AI screening tracks below:")
+        st.markdown(f"<h2>Initialize Your Screening Round, <span class='gradient-text'>{st.session_state['active_candidate_session']}</span></h2>", unsafe_allow_html=True)
+        st.markdown("<p style='color: #a59cb0; margin-bottom: 30px;'>Select your multi-modal tracking execution method below:</p>", unsafe_allow_html=True)
         
         col1, col2 = st.columns(2)
         with col1:
-            st.info("### 💬 Option A: AI Conversational Chat Bot")
-            st.write("Complete a traditional text-based screening questionnaire detailing your system engineering backgrounds.")
-            if st.button("Launch Chat Assessment ➔", type="primary"):
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+            st.markdown("### 💬 Option A: NLP Chatbot Track")
+            st.write("Complete a textbook written screening questionnaire regarding architectural optimization layouts.")
+            if st.button("Launch Chat Engine ➔", type="primary"):
                 st.session_state['candidate_step'] = "Chat Interview"
                 st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
                 
         with col2:
-            st.success("### 📹 Option B: Interactive Live Video Interview")
-            st.write("Complete a dynamic, on-camera technical evaluation module where your communication and technical parameters are calculated.")
-            if st.button("Launch Live Video Assessment ➔", type="primary"):
+            st.markdown("<div class='glass-card' style='border-color: rgba(138, 43, 226, 0.3) !important;'>", unsafe_allow_html=True)
+            st.markdown("### 📹 Option B: Live Video Capture Track")
+            st.write("Turn on your system hardware layers to record verbal responses describing your development history.")
+            if st.button("Launch Live Video Studio ➔", type="primary"):
                 st.session_state['candidate_step'] = "Video Interview"
                 st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
 
     elif st.session_state['candidate_step'] == "Chat Interview":
-        st.title("🤖 Live Pre-Screening Chatbot Window")
-        st.markdown(f"**Active Session:** `{st.session_state['active_candidate_session']}` | **Track:** Textual NLP")
+        st.title("🤖 Live Chat Assessment Environment")
+        st.markdown(f"**Session:** `{st.session_state['active_candidate_session']}`")
         st.markdown("---")
 
         chat_questions = [
@@ -213,8 +300,7 @@ elif st.session_state['portal_view'] == "Candidate":
         current_name = st.session_state['active_candidate_session']
         candidate_role = st.session_state['reg_candidates'][-1]['Role']
         
-        st.title("📹 Live Video Screening Workspace")
-        st.markdown(f"**Candidate Session:** `{current_name}` | **Assigned Functional Role Target:** {candidate_role}")
+        st.markdown(f"<h2>Live Video Stream, Space: <span class='gradient-text'>{candidate_role}</span></h2>", unsafe_allow_html=True)
         st.markdown("---")
 
         role_technical_questions = {
@@ -244,19 +330,18 @@ elif st.session_state['portal_view'] == "Candidate":
             with st.chat_message("assistant"):
                 st.write(f"📹 **Live Video Round {v_idx + 1} of 2:** {current_q}")
 
-            st.markdown("### 🖥️ Active Studio Capture Feed Console")
-            
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             vcol1, vcol2 = st.columns([6, 4])
             with vcol1:
-                cam_bytes = st.camera_input("📷 Real-Time Camera Optical Target Stream Layer", key=f"video_sensor_capture_{v_idx}")
+                cam_bytes = st.camera_input("📷 Camera Sensor Optical Target Stream", key=f"video_sensor_capture_{v_idx}")
             with vcol2:
-                st.markdown("<p style='font-size:13px; font-weight:bold; margin-bottom:2px;'>🎙️ MICROPHONE CHANNEL</p>", unsafe_allow_html=True)
+                st.markdown("<p style='font-size:12px; font-weight:bold; color: #a59cb0; letter-spacing:1px; margin-bottom:2px;'>🎙️ AUDIO RECORDING BANDWIDTH</p>", unsafe_allow_html=True)
                 audio_recorded = st.audio_input("Speak clearly to record your response text:", key=f"video_audio_sensor_{v_idx}")
                 
-                st.markdown("<br><br>", unsafe_allow_html=True)
+                st.markdown("<br>", unsafe_allow_html=True)
                 if cam_bytes is not None and audio_recorded is not None:
-                    if st.button("⏹️ Stop & Submit Video Segment", type="primary", key=f"submit_video_round_{v_idx}"):
-                        with st.spinner("⚡ Transcribing spoken audio frequencies and evaluating composure scores..."):
+                    if st.button("⏹️ Stop & Submit Video Session", type="primary", key=f"submit_video_round_{v_idx}"):
+                        with st.spinner("⏳ Transcribing spoken audio frequencies..."):
                             try:
                                 import speech_recognition as sr
                                 r = sr.Recognizer()
@@ -286,7 +371,8 @@ elif st.session_state['portal_view'] == "Candidate":
                             st.session_state['voice_index'] += 1
                             st.rerun()
                 else:
-                    st.caption("⚠️ System Status: Waiting for active camera frame and microphone stream buffers to unlock submission actions.")
+                    st.caption("⏳ Awaiting video frame sync and microphone initialization...")
+            st.markdown("</div>", unsafe_allow_html=True)
         else:
             with st.chat_message("assistant"):
                 st.write("🎉 **Video Assessment Complete!** All recording matrix configurations have been successfully pushed to the enterprise recruitment ledger. You can now submit your session tracking token below.")
@@ -313,19 +399,19 @@ elif st.session_state['portal_view'] == "Candidate":
 # FEATURE WORKFLOW 3: HR EXECUTIVE & DATA SCIENCE SUITE
 # --------------------------------------------------------------------
 else:
-    if st.sidebar.button("⬅️ Exit to Main Welcome Page", use_container_width=True):
+    if st.sidebar.button("⬅️ Exit to Home Workspace", use_container_width=True):
         st.session_state['portal_view'] = "Home"
         st.rerun()
         
     st.sidebar.markdown("---")
-    st.sidebar.markdown("### 💼 RECRUITER SERVICES")
+    st.sidebar.markdown("<p style='color: #8A2BE2; font-weight:bold; font-size:12px; letter-spacing:1px;'>ADMIN WORKSPACE</p>", unsafe_allow_html=True)
     rec_pages = ["📈 HR Executive Dashboard", "🔮 Live Resume Screening & OCR", "📸 Video Emotion Analytics", "📅 Interview Scheduler", "📜 Offer Issuance Desk"]
     
-    st.sidebar.markdown("### 🧬 DIAGNOSTIC SANDBOX")
+    st.sidebar.markdown("<p style='color: #E8601C; font-weight:bold; font-size:12px; letter-spacing:1px;'>DATA SCIENCE SANDBOX</p>", unsafe_allow_html=True)
     ds_pages = ["📁 Exploratory Data Analysis (EDA)", "🧠 Classifier Model Performance", "🔗 Semantic Job Matching Matrix", "🕵️‍♂️ Plagiarism Audit Logs", "🧩 Talent Cohort Clusters", "🧬 SpaCy & LLM Refinement"]
     
-    choice = st.sidebar.radio("Navigate Workspace Modules:", rec_pages + ds_pages)
-    st.title(f"💼 Admin Control: {choice}")
+    choice = st.sidebar.radio("Navigate Workspace Modules:", rec_pages + ds_pages, label_visibility="collapsed")
+    st.markdown(f"<h2>Workspace Module: <span class='gradient-text'>{choice}</span></h2>", unsafe_allow_html=True)
     st.markdown("---")
 
     # HR Executive Dashboard Module Code
@@ -333,33 +419,37 @@ else:
         if os.path.exists('data/processed/feature_table.csv'):
             hr_df = pd.read_csv('data/processed/feature_table.csv')
             
-            m1, m2, m3 = st.columns(3)
-            total_pool = len(hr_df)
-            high_potential = len(hr_df[hr_df['label'] == 1])
-            avg_tenure = hr_df['experience_years'].mean()
+            # Stylized Frosted Grid KPI Cards
+            k1, k2, k3 = st.columns(3)
+            with k1:
+                st.markdown(f"<div class='glass-card'><p style='color:#a59cb0; font-size:13px; font-weight:bold; margin-bottom:2px;'>ACTIVE TALENT POOL</p><h2 style='color:#ffffff; margin:0px;'>{len(hr_df)} Profiles</h2></div>", unsafe_allow_html=True)
+            with k2:
+                high_p = len(hr_df[hr_df['label'] == 1])
+                st.markdown(f"<div class='glass-card' style='border-left: 3px solid #E8601C !important;'><p style='color:#a59cb0; font-size:13px; font-weight:bold; margin-bottom:2px;'>SHORTLISTED POOL</p><h2 style='color:#E8601C; margin:0px;'>{high_p} Candidates <span style='font-size:14px; color:#a59cb0;'>({round((high_p/len(hr_df))*100, 1)}%)</span></h2></div>", unsafe_allow_html=True)
+            with k3:
+                st.markdown(f"<div class='glass-card'><p style='color:#a59cb0; font-size:13px; font-weight:bold; margin-bottom:2px;'>AVERAGE EXPERIENCE</p><h2 style='color:#ffffff; margin:0px;'>{round(hr_df['experience_years'].mean(), 1)} Years</h2></div>", unsafe_allow_html=True)
             
-            m1.metric("Active Talent Pool", f"{total_pool} Candidates")
-            m2.metric("High-Potential (Shortlisted)", f"{high_potential} Profiles", 
-                      delta=f"{round((high_potential/total_pool)*100, 1)}% of Pool", delta_color="normal")
-            m3.metric("Average Experience", f"{round(avg_tenure, 1)} Years")
-            
-            st.markdown("---")
+            st.markdown("<br>", unsafe_allow_html=True)
             col1, col2 = st.columns([6, 4])
             with col1:
+                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 cat_counts = hr_df['category'].value_counts().reset_index()
                 cat_counts.columns = ['Department/Role', 'Applications']
                 fig_dept = px.bar(cat_counts, x='Applications', y='Department/Role', orientation='h', title="📊 Application Volume by Role Category", color_discrete_sequence=['#E8601C'])
-                fig_dept.update_layout(bargap=0.15, plot_bgcolor='rgba(0,0,0,0)', xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.05)'), yaxis=dict(categoryorder='total ascending'))
+                fig_dept.update_layout(bargap=0.15, **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_dept, use_container_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
                 
             with col2:
+                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 cat_skills = hr_df.groupby('category')['num_skills'].mean().reset_index()
                 cat_skills.columns = ['Department/Role', 'Avg Skills']
-                fig_quality = px.bar(cat_skills, x='Department/Role', y='Avg Skills', title="💡 Average Skill Density by Role Type", color_discrete_sequence=['#2F80ED'])
-                fig_quality.update_layout(bargap=0.2, plot_bgcolor='rgba(0,0,0,0)', xaxis=dict(tickangle=-30))
+                fig_quality = px.bar(cat_skills, x='Department/Role', y='Avg Skills', title="💡 Average Skill Density by Role Type", color_discrete_sequence=['#8A2BE2'])
+                fig_quality.update_layout(bargap=0.2, xaxis=dict(tickangle=-30), **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_quality, use_container_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
                 
-            st.markdown("---")
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             st.subheader("🔍 Master Candidate Search & Filter Matrix")
             display_df = hr_df.copy()
             display_df['Shortlist Status'] = display_df['label'].map({1: '🔥 Shortlisted', 0: '⏳ In Review'})
@@ -372,6 +462,7 @@ else:
                 filtered_df = display_df
                 
             st.dataframe(filtered_df[['Candidate File Name', 'Role Category', 'Skills Count', 'Yrs Experience', 'Education Rank', 'Shortlist Status']], use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.info("ℹ️ System data matrix pipeline logs clear.")
 
@@ -392,12 +483,15 @@ else:
             except Exception:
                 has_model = False
         
+        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         if has_model:
-            st.caption("🟢 Core ML Architecture: Serialized `.pkl` Predictive Engine Online")
+            st.markdown("🟢 **System Connectivity:** `Serialized .pkl Predictive Classifier Online`")
         else:
-            st.caption("🔵 Core ML Architecture: Streamlined Deterministic Fallback Engine Active")
+            st.markdown("🔵 **System Connectivity:** `Deterministic Heuristic Fallback Engine Running`")
+        st.markdown("</div>", unsafe_allow_html=True)
 
-        uploaded_file = st.file_uploader("📥 Upload Candidate Resume (.docx, .pdf, .txt, .png, .jpg)", type=["docx", "txt", "pdf", "png", "jpg", "jpeg"])
+        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+        uploaded_file = st.file_uploader("📥 Upload Candidate Resume Document to Execute Capture Scan (.docx, .pdf, .txt, .png, .jpg):", type=["docx", "txt", "pdf", "png", "jpg", "jpeg"])
         extracted_text = ""
         
         if uploaded_file is not None:
@@ -432,7 +526,7 @@ else:
                     st.success(f"📁 PDF read clean: {uploaded_file.name}")
                 except Exception as e: st.error(f"Error: {e}")
         
-        raw_resume_text = st.text_area("📄 Profile Workspace OCR Text Extraction Buffer:", value=extracted_text, height=200)
+        raw_resume_text = st.text_area("📄 Profile Workspace OCR Text Extraction Buffer:", value=extracted_text, height=180)
         
         if st.button("⚡ Run Core Predictive Classifier", type="primary"):
             if not raw_resume_text.strip(): 
@@ -462,34 +556,36 @@ else:
                     st.success("🔥 RECOMMENDATION STATUS: AUTOMATED SHORTLIST CRITERIA MET")
                 else: 
                     st.info("⏳ RECOMMENDATION STATUS: STANDBY ARCHIVE POOL")
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # Recruiter-Side Video Emotion Verification Matrix Panel
     elif choice == "📸 Video Emotion Analytics":
         st.subheader("🕵️‍♂️ Recruiter Verification Panel: Candidate Behavioral Analytics")
-        st.markdown("Select an active candidate below to audit their recorded structural parameters and high-dimensional emotional engagement graphs.")
         
         available_profiles = list(st.session_state['emotion_logs'].keys())
         inspected_candidate = st.selectbox("Select Target Profile to Audit:", available_profiles)
-        
         profile_data = st.session_state['emotion_logs'][inspected_candidate]
         
         st.markdown("---")
         rc1, rc2 = st.columns([4, 6])
         
         with rc1:
-            st.markdown("##### 📹 Candidate Verification Feed Status")
-            st.success(f"🔒 Live Assessment Stream Completed: Verification Footprint Authenticated for {inspected_candidate}")
-            st.code(" [ INTERACTIVE VIDEO SUBMISSION ENCODING OK ] \n Tracks: Audio PCM, H.264 Video Matrix\n Rounds Modeled: 2 Core Evaluation Intervals ", language="text")
-            st.markdown(f"**Primary Sentiment Archetype:** `{profile_data['Primary']}`")
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+            st.markdown("##### 📹 Verification Feed Status")
+            st.success(f"🔒 Stream Footprint Verified for {inspected_candidate}")
+            st.code(" [ VIDEO TRANSACTION SECURED ] \n Codec: H.264 / AAC Audio\n Processed Frames: 340 micro-intervals ", language="text")
+            st.markdown(f"**Primary Sentiment Archetype:** \n`{profile_data['Primary']}`")
+            st.markdown("</div>", unsafe_allow_html=True)
             
         with rc2:
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             st.markdown("##### 📊 Deep Behavioral Analytics Metric Parameters")
             ec1, ec2, ec3 = st.columns(3)
             ec1.metric("Confidence Index", f"{profile_data['Confidence']}%")
             ec2.metric("Attentiveness Rate", f"{profile_data['Attentiveness']}%")
-            ec3.metric("Anxiety Index", f"{profile_data['Anxiety']}%", delta_color="inverse")
+            ec3.metric("Anxiety Index", f"{profile_data['Anxiety']}%")
             
-            st.markdown("---")
+            st.markdown("<hr style='opacity:0.05;'>", unsafe_allow_html=True)
             chart_metrics = pd.DataFrame({
                 'Emotional Attribute Matrix': ['Confidence', 'Attentiveness', 'Sincerity', 'Anxiety'],
                 'Percentage Weight (%)': [profile_data['Confidence'], profile_data['Attentiveness'], profile_data['Sincerity'], profile_data['Anxiety']]
@@ -497,14 +593,16 @@ else:
             fig_emo = px.bar(
                 chart_metrics, x='Percentage Weight (%)', y='Emotional Attribute Matrix', 
                 orientation='h', color='Emotional Attribute Matrix',
-                color_discrete_sequence=['#F2994A', '#2F80ED', '#E8601C', '#777777'],
+                color_discrete_sequence=CHART_THEME_COLOR_MAP,
                 title=f"Linguistic & Behavioral Assessment: {inspected_candidate}"
             )
-            fig_emo.update_layout(plot_bgcolor='rgba(0,0,0,0)', xaxis=dict(range=[0,105]), showlegend=False)
+            fig_emo.update_layout(showlegend=False, xaxis=dict(range=[0,105]), **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_emo, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
 
     # Interview Scheduler Module Code
     elif choice == "📅 Interview Scheduler":
+        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         if 'interviews' not in st.session_state: st.session_state['interviews'] = []
         candidate_pool = [c["Name"] for c in st.session_state.get('reg_candidates', [])]
         
@@ -521,13 +619,17 @@ else:
             if st.button("📅 Secure Synchronization Window Slot", type="primary"):
                 st.session_state['interviews'].append({"Candidate": selected_cand, "Interviewer": interviewer_name, "Date": str(int_date), "Time": str(int_time), "Status": "Confirmed"})
                 st.success(f"🔔 Slot allocated successfully for candidate {selected_cand}.")
+        st.markdown("</div>", unsafe_allow_html=True)
                 
+        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         st.markdown("### 🗓️ Active Pipeline Interview Board")
         if st.session_state['interviews']: st.dataframe(pd.DataFrame(st.session_state['interviews']), use_container_width=True)
         else: st.caption("No corporate interviews currently locked into active calendar buffers.")
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # Offer Issuance Desk Module Code
     elif choice == "📜 Offer Issuance Desk":
+        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         candidates_for_offer = [c["Name"] for c in st.session_state.get('reg_candidates', [])]
         if not candidates_for_offer: 
             st.info("No candidate identifiers loaded into session state matrix scopes.")
@@ -563,6 +665,7 @@ Corporate Talent Management Desk Office
             st.markdown("### 📝 Contract Document Output Preview Window")
             st.code(contract_template, language="text")
             st.download_button(label="📥 Download Generated Contract Document (.txt)", data=contract_template, file_name=f"Offer_Letter_{offer_name.replace(' ', '_')}.txt", mime="text/plain")
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # Exploratory Data Analysis (EDA) Module Code
     elif choice == "📁 Exploratory Data Analysis (EDA)":
@@ -570,73 +673,85 @@ Corporate Talent Management Desk Office
             df = pd.read_csv('data/processed/feature_table.csv')
             cc1, cc2 = st.columns(2)
             with cc1:
+                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 fig_skills = px.histogram(df, x='num_skills', nbins=15, title="🧠 Technical Skill Density Frequency Spread", color_discrete_sequence=['#E8601C'])
-                fig_skills.update_layout(bargap=0.08, plot_bgcolor='rgba(0,0,0,0)')
+                fig_skills.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_skills, use_container_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
             with cc2:
-                fig_exp = px.histogram(df, x='experience_years', nbins=15, title="💼 Professional Tenure Frequency Spread", color_discrete_sequence=['#E8601C'])
-                fig_exp.update_layout(bargap=0.08, plot_bgcolor='rgba(0,0,0,0)')
+                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+                fig_exp = px.histogram(df, x='experience_years', nbins=15, title="💼 Professional Tenure Frequency Spread", color_discrete_sequence=['#8A2BE2'])
+                fig_exp.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_exp, use_container_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Pipeline evaluation files empty.")
 
     # Classifier Model Performance Module Code
     elif choice == "🧠 Classifier Model Performance":
         if os.path.exists('data/processed/model_metrics.json'):
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             with open('data/processed/model_metrics.json', 'r') as f: metrics_data = json.load(f)
             results_df = pd.DataFrame(metrics_data).T.reset_index().rename(columns={'index': 'Model'})
             results_melted = results_df.melt(id_vars='Model', var_name='Metric', value_name='Score')
-            fig_model = px.bar(results_melted, x='Model', y='Score', color='Metric', barmode='group', color_discrete_sequence=['#E8601C', '#F2994A', '#333333', '#777777'])
-            fig_model.update_layout(bargap=0.18, bargroupgap=0.04, plot_bgcolor='rgba(0,0,0,0)', yaxis=dict(range=[0, 1.05]))
+            fig_model = px.bar(results_melted, x='Model', y='Score', color='Metric', barmode='group', color_discrete_sequence=CHART_THEME_COLOR_MAP)
+            fig_model.update_layout(bargap=0.18, bargroupgap=0.04, yaxis=dict(range=[0, 1.05]), **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_model, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Optimization metrics log buffers clear.")
 
     # Semantic Job Matching Matrix Module Code
     elif choice == "🔗 Semantic Job Matching Matrix":
         if os.path.exists('data/processed/job_match_samples.csv'):
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             jm = pd.read_csv('data/processed/job_match_samples.csv')
             st.dataframe(jm, use_container_width=True)
             fig_match = px.histogram(jm, x='best_job_match_pct', nbins=12, color_discrete_sequence=['#E8601C'], marginal="box")
-            fig_match.update_layout(bargap=0.08, plot_bgcolor='rgba(0,0,0,0)')
+            fig_match.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_match, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ— Distance score tracking profiles absent on local files.")
 
     # Plagiarism Audit Logs Module Code
     elif choice == "🕵️‍♂️ Plagiarism Audit Logs":
         if os.path.exists('data/processed/fraud_similarity_scores.csv'):
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             fraud_df = pd.read_csv('data/processed/fraud_similarity_scores.csv')
-            fig_fraud = px.histogram(fraud_df, x='max_similarity', nbins=10, title="🔒 Textual Overlap Density Index Log", color_discrete_sequence=['#E8601C'])
-            fig_fraud.update_layout(bargap=0.08, plot_bgcolor='rgba(0,0,0,0)')
+            fig_fraud = px.histogram(fraud_df, x='max_similarity', nbins=10, title="🔒 Textual Overlap Density Index Log", color_discrete_sequence=['#8A2BE2'])
+            fig_fraud.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_fraud, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Plagiarism cross-check file records clear.")
 
     # Talent Cohort Clusters Module Code
     elif choice == "🧩 Talent Cohort Clusters":
         if os.path.exists('data/processed/cluster_results.csv'):
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             cl = pd.read_csv('data/processed/cluster_results.csv')
-            fig_scatter = px.scatter(cl, x='pca_x', y='pca_y', color=cl['cluster'].astype(str), title="🎯 Spatial Architecture Clusters Map (PCA Reduced)", color_discrete_sequence=['#E8601C', '#2F80ED', '#F2994A', '#777777'])
-            fig_scatter.update_layout(plot_bgcolor='rgba(0,0,0,0)')
+            fig_scatter = px.scatter(cl, x='pca_x', y='pca_y', color=cl['cluster'].astype(str), title="🎯 Spatial Architecture Clusters Map (PCA Reduced)", color_discrete_sequence=CHART_THEME_COLOR_MAP)
+            fig_scatter.update_layout(**PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_scatter, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+            
         if os.path.exists('data/processed/cluster_profile.csv'):
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             profile = pd.read_csv('data/processed/cluster_profile.csv')
             profile_melted = profile.melt(id_vars='cluster', var_name='feature', value_name='avg_value')
-            fig_profile = px.bar(profile_melted, x='cluster', y='avg_value', color='feature', barmode='group', title="Cluster Attributes Profiles Metrics", color_discrete_sequence=['#E8601C', '#2F80ED', '#F2994A'])
-            fig_profile.update_layout(bargap=0.18, bargroupgap=0.04, plot_bgcolor='rgba(0,0,0,0)')
+            fig_profile = px.bar(profile_melted, x='cluster', y='avg_value', color='feature', barmode='group', title="Cluster Attributes Profiles Metrics", color_discrete_sequence=CHART_THEME_COLOR_MAP)
+            fig_profile.update_layout(bargap=0.18, bargroupgap=0.04, **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_profile, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Unsupervised baseline profiles offline.")
 
     # SpaCy & LLM Sandbox Module Code
     elif choice == "🧬 SpaCy & LLM Refinement":
-        st.subheader("🧬 SpaCy Linguistic Processor & Generative LLM Diagnostics")
-        st.markdown("Review the raw tokenization structures handled by **SpaCy** and review executive feedback logs synthesized by our generative **LLM** model layers.")
-        st.markdown("---")
-        
         sample_profiles = ["Anurika Sharma", "Rohan Das"]
         active_target = st.selectbox("Select Target Profile to Execute Diagnostics Matrix:", sample_profiles)
         
         sc_col1, sc_col2 = st.columns(2)
         with sc_col1:
-            st.markdown("#### 🏷️ SpaCy Core Text Tokenization & Part-of-Speech Tagging")
-            st.write("Visualizing how SpaCy tokenizes words and maps tags (`NOUN`, `VERB`, `PROPN`) to establish structural context arrays:")
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+            st.markdown("#### 🏷️ SpaCy Core Text Tokenization")
+            st.write("Visualizing tag maps (`NOUN`, `VERB`, `PROPN`) to establish structural context arrays:")
             
             spacy_data = pd.DataFrame({
                 'Token String': ['Data', 'Scientist', 'specializes', 'in', 'training', 'predictive', 'XGBoost', 'models', 'efficiently'],
@@ -644,11 +759,12 @@ Corporate Talent Management Desk Office
                 'POS Tag Attribute': ['NOUN', 'NOUN', 'VERB', 'ADP', 'VERB', 'ADJ', 'PROPN', 'NOUN', 'ADV']
             })
             st.dataframe(spacy_data, use_container_width=True)
-            st.caption("⚙️ SpaCy engine processing path successfully configured using programmatic lexical token filters.")
+            st.markdown("</div>", unsafe_allow_html=True)
             
         with sc_col2:
-            st.markdown("#### 🤖 LLM Recruiter Contextual Generation Workspace")
-            st.write("Generates automated recruiter intelligence notes and insights based on the candidate's screening rounds:")
+            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+            st.markdown("#### 🤖 LLM Recruiter Contextual Generation")
+            st.write("Generates automated recruiter intelligence notes based on the candidate's screening rounds:")
             
             if active_target == "Anurika Sharma":
                 llm_summary = """[LLM Model Executive Commentary Log]
@@ -664,4 +780,4 @@ Corporate Talent Management Desk Office
 - Recommendation score: 87.8% Proceed to Technical Interview Round Stack."""
                 
             st.code(llm_summary, language="text")
-            st.info("💡 Generative LLM insight text strings securely logged and appended to master applicant file structures on disk.")
+            st.markdown("</div>", unsafe_allow_html=True)
