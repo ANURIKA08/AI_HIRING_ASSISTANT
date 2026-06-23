@@ -23,7 +23,17 @@ st.markdown("""
         font-family: 'Inter', system-ui, sans-serif !important;
     }
     
-    /* Premium Glassmorphic Card Containers */
+    /* Native Streamlit Forms and Chat Inputs inherit Glassmorphism safely */
+    [data-testid="stForm"], [data-testid="stChatInput"] {
+        background: rgba(25, 18, 38, 0.45) !important;
+        border: 1px solid rgba(232, 96, 28, 0.15) !important;
+        border-radius: 16px !important;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+        backdrop-filter: blur(12px) !important;
+        padding: 20px !important;
+    }
+    
+    /* Premium Glassmorphic Card Containers (For Pure HTML ONLY) */
     .glass-card {
         background: rgba(25, 18, 38, 0.45) !important;
         border: 1px solid rgba(232, 96, 28, 0.15) !important;
@@ -75,7 +85,7 @@ st.markdown("""
     }
     
     /* Input Fields Styling */
-    .stTextInput>div>div>input, .stSelectbox>div>div>div {
+    .stTextInput>div>div>input, .stSelectbox>div>div>div, .stNumberInput>div>div>input {
         background-color: #120b1a !important;
         color: #ffffff !important;
         border: 1px solid rgba(255,255,255,0.1) !important;
@@ -167,18 +177,14 @@ if st.session_state['portal_view'] == "Home":
     
     btn_col1, btn_col2 = st.columns(2)
     with btn_col1:
-        st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
         if st.button("👤 ACCESS CANDIDATE PORTAL", use_container_width=True, type="primary"):
             st.session_state['portal_view'] = "Candidate"
             st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
         
     with btn_col2:
-        st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
         if st.button("💼 ACCESS HR PORTAL", use_container_width=True):
             st.session_state['portal_view'] = "HR"
             st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
 
     st.markdown("<br><br><br><br><hr style='border-color: rgba(255,255,255,0.05);'>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; color: #62596d; font-size: 12px;'>Platform Core Engine v4.0.0 • Active Server Cluster Token Authenticated</p>", unsafe_allow_html=True)
@@ -198,7 +204,6 @@ elif st.session_state['portal_view'] == "Candidate":
         st.markdown("<h2 style='margin-bottom:0px;'>Candidate Onboarding Setup</h2>", unsafe_allow_html=True)
         st.markdown("<p style='color: #a59cb0; margin-bottom: 25px;'>Please declare your core identity parameters to initialize your screening modules.</p>", unsafe_allow_html=True)
         
-        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         with st.form("candidate_registration_form", clear_on_submit=True):
             c_name = st.text_input("Full Candidate Name:", placeholder="Jane Doe")
             c_email = st.text_input("Email Address:", placeholder="jane@example.com")
@@ -220,7 +225,6 @@ elif st.session_state['portal_view'] == "Candidate":
                     st.session_state['chat_history'] = []
                     st.success(f"🎉 Session registered successfully for {c_name}!")
                     st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
 
     elif st.session_state['candidate_step'] == "Select Assessment":
         st.markdown(f"<h2>Initialize Your Screening Round, <span class='gradient-text'>{st.session_state['active_candidate_session']}</span></h2>", unsafe_allow_html=True)
@@ -228,22 +232,18 @@ elif st.session_state['portal_view'] == "Candidate":
         
         col1, col2 = st.columns(2)
         with col1:
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
-            st.markdown("### 💬 Option A: NLP Chatbot Track")
+            st.info("### 💬 Option A: NLP Chatbot Track")
             st.write("Complete a textbook written screening questionnaire regarding architectural optimization layouts.")
             if st.button("Launch Chat Engine ➔", type="primary"):
                 st.session_state['candidate_step'] = "Chat Interview"
                 st.rerun()
-            st.markdown("</div>", unsafe_allow_html=True)
                 
         with col2:
-            st.markdown("<div class='glass-card' style='border-color: rgba(138, 43, 226, 0.3) !important;'>", unsafe_allow_html=True)
-            st.markdown("### 📹 Option B: Live Video Capture Track")
+            st.success("### 📹 Option B: Live Video Capture Track")
             st.write("Turn on your system hardware layers to record verbal responses describing your development history.")
             if st.button("Launch Live Video Studio ➔", type="primary"):
                 st.session_state['candidate_step'] = "Video Interview"
                 st.rerun()
-            st.markdown("</div>", unsafe_allow_html=True)
 
     elif st.session_state['candidate_step'] == "Chat Interview":
         st.title("🤖 Live Chat Assessment Environment")
@@ -330,7 +330,6 @@ elif st.session_state['portal_view'] == "Candidate":
             with st.chat_message("assistant"):
                 st.write(f"📹 **Live Video Round {v_idx + 1} of 2:** {current_q}")
 
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             vcol1, vcol2 = st.columns([6, 4])
             with vcol1:
                 cam_bytes = st.camera_input("📷 Camera Sensor Optical Target Stream", key=f"video_sensor_capture_{v_idx}")
@@ -372,7 +371,6 @@ elif st.session_state['portal_view'] == "Candidate":
                             st.rerun()
                 else:
                     st.caption("⏳ Awaiting video frame sync and microphone initialization...")
-            st.markdown("</div>", unsafe_allow_html=True)
         else:
             with st.chat_message("assistant"):
                 st.write("🎉 **Video Assessment Complete!** All recording matrix configurations have been successfully pushed to the enterprise recruitment ledger. You can now submit your session tracking token below.")
@@ -419,7 +417,7 @@ else:
         if os.path.exists('data/processed/feature_table.csv'):
             hr_df = pd.read_csv('data/processed/feature_table.csv')
             
-            # Stylized Frosted Grid KPI Cards
+            # Single-String Pure HTML KPI Cards (Safe format)
             k1, k2, k3 = st.columns(3)
             with k1:
                 st.markdown(f"<div class='glass-card'><p style='color:#a59cb0; font-size:13px; font-weight:bold; margin-bottom:2px;'>ACTIVE TALENT POOL</p><h2 style='color:#ffffff; margin:0px;'>{len(hr_df)} Profiles</h2></div>", unsafe_allow_html=True)
@@ -432,28 +430,21 @@ else:
             st.markdown("<br>", unsafe_allow_html=True)
             col1, col2 = st.columns([6, 4])
             with col1:
-                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 cat_counts = hr_df['category'].value_counts().reset_index()
                 cat_counts.columns = ['Department/Role', 'Applications']
                 fig_dept = px.bar(cat_counts, x='Applications', y='Department/Role', orientation='h', title="📊 Application Volume by Role Category", color_discrete_sequence=['#E8601C'])
                 fig_dept.update_layout(bargap=0.15, **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_dept, use_container_width=True)
-                st.markdown("</div>", unsafe_allow_html=True)
                 
             with col2:
-                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 cat_skills = hr_df.groupby('category')['num_skills'].mean().reset_index()
                 cat_skills.columns = ['Department/Role', 'Avg Skills']
                 fig_quality = px.bar(cat_skills, x='Department/Role', y='Avg Skills', title="💡 Average Skill Density by Role Type", color_discrete_sequence=['#8A2BE2'])
-                
-                # FIXED: Separated update commands to prevent Python **kwarg clashes
                 fig_quality.update_layout(bargap=0.2, **PLOTLY_DARK_LAYOUT_CONFIG)
                 fig_quality.update_xaxes(tickangle=-30)
-                
                 st.plotly_chart(fig_quality, use_container_width=True)
-                st.markdown("</div>", unsafe_allow_html=True)
                 
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+            st.markdown("---")
             st.subheader("🔍 Master Candidate Search & Filter Matrix")
             display_df = hr_df.copy()
             display_df['Shortlist Status'] = display_df['label'].map({1: '🔥 Shortlisted', 0: '⏳ In Review'})
@@ -466,7 +457,6 @@ else:
                 filtered_df = display_df
                 
             st.dataframe(filtered_df[['Candidate File Name', 'Role Category', 'Skills Count', 'Yrs Experience', 'Education Rank', 'Shortlist Status']], use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.info("ℹ️ System data matrix pipeline logs clear.")
 
@@ -487,15 +477,14 @@ else:
             except Exception:
                 has_model = False
         
-        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+        # Single-string HTML block for clean rendering
         if has_model:
-            st.markdown("🟢 **System Connectivity:** `Serialized .pkl Predictive Classifier Online`")
+            st.markdown("<div class='glass-card'>🟢 <b>System Connectivity:</b> <span style='font-family: monospace; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px;'>Serialized .pkl Predictive Classifier Online</span></div>", unsafe_allow_html=True)
         else:
-            st.markdown("🔵 **System Connectivity:** `Deterministic Heuristic Fallback Engine Running`")
-        st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown("<div class='glass-card'>🔵 <b>System Connectivity:</b> <span style='font-family: monospace; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px;'>Deterministic Heuristic Fallback Engine Running</span></div>", unsafe_allow_html=True)
 
-        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
-        uploaded_file = st.file_uploader("📥 Upload Candidate Resume Document to Execute Capture Scan (.docx, .pdf, .txt, .png, .jpg):", type=["docx", "txt", "pdf", "png", "jpg", "jpeg"])
+        st.markdown("### 📥 Candidate Document Input Layer")
+        uploaded_file = st.file_uploader("Upload Candidate Resume Document to Execute Capture Scan (.docx, .pdf, .txt, .png, .jpg):", type=["docx", "txt", "pdf", "png", "jpg", "jpeg"])
         extracted_text = ""
         
         if uploaded_file is not None:
@@ -560,7 +549,6 @@ else:
                     st.success("🔥 RECOMMENDATION STATUS: AUTOMATED SHORTLIST CRITERIA MET")
                 else: 
                     st.info("⏳ RECOMMENDATION STATUS: STANDBY ARCHIVE POOL")
-        st.markdown("</div>", unsafe_allow_html=True)
 
     # Recruiter-Side Video Emotion Verification Matrix Panel
     elif choice == "📸 Video Emotion Analytics":
@@ -574,16 +562,11 @@ else:
         rc1, rc2 = st.columns([4, 6])
         
         with rc1:
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
-            st.markdown("##### 📹 Verification Feed Status")
             st.success(f"🔒 Stream Footprint Verified for {inspected_candidate}")
             st.code(" [ VIDEO TRANSACTION SECURED ] \n Codec: H.264 / AAC Audio\n Processed Frames: 340 micro-intervals ", language="text")
             st.markdown(f"**Primary Sentiment Archetype:** \n`{profile_data['Primary']}`")
-            st.markdown("</div>", unsafe_allow_html=True)
             
         with rc2:
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
-            st.markdown("##### 📊 Deep Behavioral Analytics Metric Parameters")
             ec1, ec2, ec3 = st.columns(3)
             ec1.metric("Confidence Index", f"{profile_data['Confidence']}%")
             ec2.metric("Attentiveness Rate", f"{profile_data['Attentiveness']}%")
@@ -600,17 +583,12 @@ else:
                 color_discrete_sequence=CHART_THEME_COLOR_MAP,
                 title=f"Linguistic & Behavioral Assessment: {inspected_candidate}"
             )
-            
-            # FIXED: Separated update commands to prevent Python **kwarg clashes
             fig_emo.update_layout(showlegend=False, **PLOTLY_DARK_LAYOUT_CONFIG)
             fig_emo.update_xaxes(range=[0,105])
-            
             st.plotly_chart(fig_emo, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
 
     # Interview Scheduler Module Code
     elif choice == "📅 Interview Scheduler":
-        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         if 'interviews' not in st.session_state: st.session_state['interviews'] = []
         candidate_pool = [c["Name"] for c in st.session_state.get('reg_candidates', [])]
         
@@ -627,17 +605,14 @@ else:
             if st.button("📅 Secure Synchronization Window Slot", type="primary"):
                 st.session_state['interviews'].append({"Candidate": selected_cand, "Interviewer": interviewer_name, "Date": str(int_date), "Time": str(int_time), "Status": "Confirmed"})
                 st.success(f"🔔 Slot allocated successfully for candidate {selected_cand}.")
-        st.markdown("</div>", unsafe_allow_html=True)
                 
-        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
+        st.markdown("---")
         st.markdown("### 🗓️ Active Pipeline Interview Board")
         if st.session_state['interviews']: st.dataframe(pd.DataFrame(st.session_state['interviews']), use_container_width=True)
         else: st.caption("No corporate interviews currently locked into active calendar buffers.")
-        st.markdown("</div>", unsafe_allow_html=True)
 
     # Offer Issuance Desk Module Code
     elif choice == "📜 Offer Issuance Desk":
-        st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         candidates_for_offer = [c["Name"] for c in st.session_state.get('reg_candidates', [])]
         if not candidates_for_offer: 
             st.info("No candidate identifiers loaded into session state matrix scopes.")
@@ -673,7 +648,6 @@ Corporate Talent Management Desk Office
             st.markdown("### 📝 Contract Document Output Preview Window")
             st.code(contract_template, language="text")
             st.download_button(label="📥 Download Generated Contract Document (.txt)", data=contract_template, file_name=f"Offer_Letter_{offer_name.replace(' ', '_')}.txt", mime="text/plain")
-        st.markdown("</div>", unsafe_allow_html=True)
 
     # Exploratory Data Analysis (EDA) Module Code
     elif choice == "📁 Exploratory Data Analysis (EDA)":
@@ -681,87 +655,71 @@ Corporate Talent Management Desk Office
             df = pd.read_csv('data/processed/feature_table.csv')
             cc1, cc2 = st.columns(2)
             with cc1:
-                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 fig_skills = px.histogram(df, x='num_skills', nbins=15, title="🧠 Technical Skill Density Frequency Spread", color_discrete_sequence=['#E8601C'])
                 fig_skills.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_skills, use_container_width=True)
-                st.markdown("</div>", unsafe_allow_html=True)
             with cc2:
-                st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
                 fig_exp = px.histogram(df, x='experience_years', nbins=15, title="💼 Professional Tenure Frequency Spread", color_discrete_sequence=['#8A2BE2'])
                 fig_exp.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
                 st.plotly_chart(fig_exp, use_container_width=True)
-                st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Pipeline evaluation files empty.")
 
     # Classifier Model Performance Module Code
     elif choice == "🧠 Classifier Model Performance":
         if os.path.exists('data/processed/model_metrics.json'):
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             with open('data/processed/model_metrics.json', 'r') as f: metrics_data = json.load(f)
             results_df = pd.DataFrame(metrics_data).T.reset_index().rename(columns={'index': 'Model'})
             results_melted = results_df.melt(id_vars='Model', var_name='Metric', value_name='Score')
             fig_model = px.bar(results_melted, x='Model', y='Score', color='Metric', barmode='group', color_discrete_sequence=CHART_THEME_COLOR_MAP)
-            
-            # FIXED: Separated update commands to prevent Python **kwarg clashes
             fig_model.update_layout(bargap=0.18, bargroupgap=0.04, **PLOTLY_DARK_LAYOUT_CONFIG)
             fig_model.update_yaxes(range=[0, 1.05])
-            
             st.plotly_chart(fig_model, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Optimization metrics log buffers clear.")
 
     # Semantic Job Matching Matrix Module Code
     elif choice == "🔗 Semantic Job Matching Matrix":
         if os.path.exists('data/processed/job_match_samples.csv'):
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             jm = pd.read_csv('data/processed/job_match_samples.csv')
             st.dataframe(jm, use_container_width=True)
             fig_match = px.histogram(jm, x='best_job_match_pct', nbins=12, color_discrete_sequence=['#E8601C'], marginal="box")
             fig_match.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_match, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ— Distance score tracking profiles absent on local files.")
 
     # Plagiarism Audit Logs Module Code
     elif choice == "🕵️‍♂️ Plagiarism Audit Logs":
         if os.path.exists('data/processed/fraud_similarity_scores.csv'):
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             fraud_df = pd.read_csv('data/processed/fraud_similarity_scores.csv')
             fig_fraud = px.histogram(fraud_df, x='max_similarity', nbins=10, title="🔒 Textual Overlap Density Index Log", color_discrete_sequence=['#8A2BE2'])
             fig_fraud.update_layout(bargap=0.08, **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_fraud, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Plagiarism cross-check file records clear.")
 
     # Talent Cohort Clusters Module Code
     elif choice == "🧩 Talent Cohort Clusters":
         if os.path.exists('data/processed/cluster_results.csv'):
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             cl = pd.read_csv('data/processed/cluster_results.csv')
             fig_scatter = px.scatter(cl, x='pca_x', y='pca_y', color=cl['cluster'].astype(str), title="🎯 Spatial Architecture Clusters Map (PCA Reduced)", color_discrete_sequence=CHART_THEME_COLOR_MAP)
             fig_scatter.update_layout(**PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_scatter, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown("---")
             
         if os.path.exists('data/processed/cluster_profile.csv'):
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             profile = pd.read_csv('data/processed/cluster_profile.csv')
             profile_melted = profile.melt(id_vars='cluster', var_name='feature', value_name='avg_value')
             fig_profile = px.bar(profile_melted, x='cluster', y='avg_value', color='feature', barmode='group', title="Cluster Attributes Profiles Metrics", color_discrete_sequence=CHART_THEME_COLOR_MAP)
             fig_profile.update_layout(bargap=0.18, bargroupgap=0.04, **PLOTLY_DARK_LAYOUT_CONFIG)
             st.plotly_chart(fig_profile, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
         else: st.info("ℹ️ Unsupervised baseline profiles offline.")
 
     # SpaCy & LLM Sandbox Module Code
     elif choice == "🧬 SpaCy & LLM Refinement":
         sample_profiles = ["Anurika Sharma", "Rohan Das"]
         active_target = st.selectbox("Select Target Profile to Execute Diagnostics Matrix:", sample_profiles)
+        st.markdown("---")
         
         sc_col1, sc_col2 = st.columns(2)
         with sc_col1:
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             st.markdown("#### 🏷️ SpaCy Core Text Tokenization")
             st.write("Visualizing tag maps (`NOUN`, `VERB`, `PROPN`) to establish structural context arrays:")
             
@@ -771,10 +729,8 @@ Corporate Talent Management Desk Office
                 'POS Tag Attribute': ['NOUN', 'NOUN', 'VERB', 'ADP', 'VERB', 'ADJ', 'PROPN', 'NOUN', 'ADV']
             })
             st.dataframe(spacy_data, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
             
         with sc_col2:
-            st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
             st.markdown("#### 🤖 LLM Recruiter Contextual Generation")
             st.write("Generates automated recruiter intelligence notes based on the candidate's screening rounds:")
             
@@ -792,4 +748,3 @@ Corporate Talent Management Desk Office
 - Recommendation score: 87.8% Proceed to Technical Interview Round Stack."""
                 
             st.code(llm_summary, language="text")
-            st.markdown("</div>", unsafe_allow_html=True)
